@@ -21,7 +21,10 @@
   - [13 Agent评估体系与常见陷阱](docs/part3/13-Agent评估体系与常见陷阱.md)
 
 - **Part 4 · 真实项目复盘** 🔒付费¥99
-  - [内容预览与解锁方式](docs/part4/README.md)
+  - [14 企业IM机器人(试读)](docs/part4/14-企业IM智能问答机器人.md)
+  - [15 数据分析Agent架构演进(试读)](docs/part4/15-数据分析Agent架构演进.md)
+  - [16 独立开发者一周产品(试读)](docs/part4/16-独立开发者一周产品.md)
+  - [解锁方式](docs/part4/README.md)
 
 - **Part 5 · 毕业设计与展望**
   - [17 毕业设计Pitch](docs/part5/17-毕业设计Pitch.md)

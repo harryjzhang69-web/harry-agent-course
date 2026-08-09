@@ -64,8 +64,10 @@
 - [12 Agentic RL 产品经理版](./docs/part3/12-Agentic-RL产品经理版.md)
 - [13 Agent 评估体系与常见陷阱](./docs/part3/13-Agent评估体系与常见陷阱.md)
 
-### Part 4 · 从Demo 到产品——真实项目复盘 🔒 进阶付费 ¥99
-- [内容预览与解锁方式](./docs/part4/README.md)：企业 IM 机器人复盘、数据分析 Agent 架构演进、独立开发者一周做出 AI 小产品
+### Part 4 · 从Demo 到产品——真实项目复盘 🔒 进阶付费 ¥99（三章已全部完稿）
+- [14 案例一：企业IM智能问答机器人（试读）](./docs/part4/14-企业IM智能问答机器人.md)
+- [15 案例二：数据分析Agent架构演进（试读）](./docs/part4/15-数据分析Agent架构演进.md)
+- [16 案例三：独立开发者一周产品（试读）](./docs/part4/16-独立开发者一周产品.md)
 
 ### Part 5 · 毕业设计与展望 ✅ 免费
 - [17 毕业设计：你的 Agent 产品 Pitch](./docs/part5/17-毕业设计Pitch.md)
