@@ -7,8 +7,11 @@
   - [03 大模型是发动机不是车](docs/part1/03-大模型是发动机不是车.md)
   - [04 Agent 产品成熟度分级](docs/part1/04-Agent产品成熟度分级.md)
 
-- **Part 2 · 亲手造轮子** 🚧
-  - [概览与进度](docs/part2/README.md)
+- **Part 2 · 亲手造轮子**
+  - [05 三大经典范式手把手实现](docs/part2/05-三大经典范式手把手实现.md)
+  - [06 低代码平台怎么选](docs/part2/06-低代码平台怎么选.md)
+  - [07 主流框架产品化评测](docs/part2/07-主流框架产品化评测.md)
+  - [08 从零写一个Agent框架](docs/part2/08-从零写一个Agent框架.md)
 
 - **Part 3 · 高级能力** 🚧
   - [概览与进度](docs/part3/README.md)
@@ -20,6 +23,9 @@
   - [概览与进度](docs/part5/README.md)
 
 - **可运行 Demo**
-  - [01最小 ReAct Agent](demos/01-hello-react-agent/README.md)
+  - [01 最小ReAct Agent](demos/01-hello-react-agent/README.md)
+  - [02 Plan-and-Solve Agent](demos/02-plan-and-solve-agent/README.md)
+  - [03 Reflection Agent](demos/03-reflection-agent/README.md)
+  - [04 迷你Agent框架](demos/04-mini-agent-framework/README.md)
 
 - [进度看板 ROADMAP](ROADMAP.md)

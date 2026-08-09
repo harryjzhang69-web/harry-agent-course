@@ -9,10 +9,10 @@
 | | 02 一张图看懂 Agent 进化史 | ✅ | |
 | | 03 大模型是发动机不是车 | ✅ | |
 | | 04 Agent 产品成熟度分级 L0~L3 | ✅ | 原创分级框架 |
-| Part 2 亲手造轮子 | 05 三大经典范式手把手实现（ReAct/Plan-and-Solve/Reflection） | 🚧 | demo 已先行发布在 `demos/01-hello-react-agent` |
-| | 06 低代码平台怎么选（Dify/Coze/n8n） | ⬜ | |
-| | 07 主流框架产品化评测（LangGraph/AutoGen/AgentScope） | ⬜ | |
-| | 08 从零写一个 <300 行的 Agent 框架 | ⬜ | |
+| Part 2 亲手造轮子 | 05 三大经典范式手把手实现（ReAct/Plan-and-Solve/Reflection） | ✅ | 配3个demo：01/02/03 |
+| | 06 低代码平台怎么选（Dify/Coze/n8n） | ✅ | |
+| | 07 主流框架产品化评测（LangGraph/AutoGen/AgentScope） | ✅ | |
+| | 08 从零写一个 <300 行的 Agent 框架 | ✅ | 配demo 04-mini-agent-framework |
 | Part 3 高级能力 | 09 记忆与检索 | ⬜ | |
 | | 10 上下文工程 | ⬜ | |
 | | 11 通信协议速查（MCP/A2A/ANP） | ⬜ | |
@@ -28,5 +28,6 @@
 
 ## 更新日志
 
-- 2026-08：项目启动，完成前言 + Part 1 全部4 章 + 首个可运行 demo（最小 ReAct Agent）
+- 2026-08：项目启动，完成前言 + Part 1 全部4章 + 首个可运行 demo（最小 ReAct Agent）
 - 2026-08：确定商业模式——前言/Part1~3/Part5 永久免费，Part4 真实项目复盘 ¥99 私信解锁
+- 2026-08：完成 Part 2 全部4章 + 3个新demo（Plan-and-Solve/Reflection/迷你Agent框架）

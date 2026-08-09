@@ -51,8 +51,11 @@
 - [03 大模型是发动机，不是车](./docs/part1/03-大模型是发动机不是车.md)
 - [04 Agent 产品成熟度分级：L0~L3](./docs/part1/04-Agent产品成熟度分级.md)
 
-### Part 2 · 亲手造轮子——从 Prompt 到框架 🚧免费
-- [概览与进度](./docs/part2/README.md)：ReAct/Plan-and-Solve/Reflection 手把手实现、低代码平台怎么选、主流框架产品化评测、从零写一个 <300 行的 Agent 框架
+### Part 2 ·亲手造轮子——从 Prompt 到框架 ✅ 免费
+- [05 三大经典范式手把手实现（ReAct/Plan-and-Solve/Reflection）](./docs/part2/05-三大经典范式手把手实现.md)
+- [06 低代码平台怎么选（Dify/Coze/n8n）](./docs/part2/06-低代码平台怎么选.md)
+- [07 主流框架产品化评测（LangGraph/AutoGen/AgentScope）](./docs/part2/07-主流框架产品化评测.md)
+- [08 从零写一个 <300 行的 Agent 框架](./docs/part2/08-从零写一个Agent框架.md)
 
 ### Part 3 · 让 Agent 活起来——高级能力 🚧 免费
 - [概览与进度](./docs/part3/README.md)：记忆与检索、上下文工程、MCP/A2A 通信协议速查、Agentic RL 产品经理版、Agent 评估体系
@@ -65,6 +68,9 @@
 
 ### 可运行 Demo（免费）
 - [demos/01-hello-react-agent](./demos/01-hello-react-agent)：5分钟跑起来的最小 ReAct Agent
+- [demos/02-plan-and-solve-agent](./demos/02-plan-and-solve-agent)：Plan-and-Solve Agent
+- [demos/03-reflection-agent](./demos/03-reflection-agent)：Reflection Agent
+- [demos/04-mini-agent-framework](./demos/04-mini-agent-framework)：迷你 Agent 框架（<300行）
 
 ## 怎么读
 
