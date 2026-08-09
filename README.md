@@ -57,20 +57,26 @@
 - [07 主流框架产品化评测（LangGraph/AutoGen/AgentScope）](./docs/part2/07-主流框架产品化评测.md)
 - [08 从零写一个 <300 行的 Agent 框架](./docs/part2/08-从零写一个Agent框架.md)
 
-### Part 3 · 让 Agent 活起来——高级能力 🚧 免费
-- [概览与进度](./docs/part3/README.md)：记忆与检索、上下文工程、MCP/A2A 通信协议速查、Agentic RL 产品经理版、Agent 评估体系
+### Part 3 · 让Agent 活起来——高级能力 ✅ 免费
+- [09 记忆与检索](./docs/part3/09-记忆与检索.md)
+- [10 上下文工程](./docs/part3/10-上下文工程.md)
+- [11 通信协议速查（MCP/A2A/ANP）](./docs/part3/11-通信协议速查.md)
+- [12 Agentic RL 产品经理版](./docs/part3/12-Agentic-RL产品经理版.md)
+- [13 Agent 评估体系与常见陷阱](./docs/part3/13-Agent评估体系与常见陷阱.md)
 
 ### Part 4 · 从Demo 到产品——真实项目复盘 🔒 进阶付费 ¥99
 - [内容预览与解锁方式](./docs/part4/README.md)：企业 IM 机器人复盘、数据分析 Agent 架构演进、独立开发者一周做出 AI 小产品
 
-### Part 5 · 毕业设计与展望 🚧 免费
-- [概览与进度](./docs/part5/README.md)：设计你自己的 Agent 产品 Pitch、AI 产品经理 / Agent 工程师转型面试题库
+### Part 5 · 毕业设计与展望 ✅ 免费
+- [17 毕业设计：你的 Agent 产品 Pitch](./docs/part5/17-毕业设计Pitch.md)
+- [18 转型面试题库（AI 产品经理 / Agent 工程师）](./docs/part5/18-转型面试题库.md)
 
 ### 可运行 Demo（免费）
 - [demos/01-hello-react-agent](./demos/01-hello-react-agent)：5分钟跑起来的最小 ReAct Agent
 - [demos/02-plan-and-solve-agent](./demos/02-plan-and-solve-agent)：Plan-and-Solve Agent
 - [demos/03-reflection-agent](./demos/03-reflection-agent)：Reflection Agent
 - [demos/04-mini-agent-framework](./demos/04-mini-agent-framework)：迷你 Agent 框架（<300行）
+- [demos/05-simple-memory-rag](./demos/05-simple-memory-rag)：最小可用的检索增强记忆（RAG）
 
 ## 怎么读
 

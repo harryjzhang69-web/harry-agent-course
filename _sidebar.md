@@ -13,19 +13,25 @@
   - [07 主流框架产品化评测](docs/part2/07-主流框架产品化评测.md)
   - [08 从零写一个Agent框架](docs/part2/08-从零写一个Agent框架.md)
 
-- **Part 3 · 高级能力** 🚧
-  - [概览与进度](docs/part3/README.md)
+- **Part 3 · 高级能力**
+  - [09 记忆与检索](docs/part3/09-记忆与检索.md)
+  - [10 上下文工程](docs/part3/10-上下文工程.md)
+  - [11 通信协议速查](docs/part3/11-通信协议速查.md)
+  - [12 Agentic RL产品经理版](docs/part3/12-Agentic-RL产品经理版.md)
+  - [13 Agent评估体系与常见陷阱](docs/part3/13-Agent评估体系与常见陷阱.md)
 
 - **Part 4 · 真实项目复盘** 🔒付费¥99
   - [内容预览与解锁方式](docs/part4/README.md)
 
-- **Part 5 · 毕业设计与展望** 🚧
-  - [概览与进度](docs/part5/README.md)
+- **Part 5 · 毕业设计与展望**
+  - [17 毕业设计Pitch](docs/part5/17-毕业设计Pitch.md)
+  - [18 转型面试题库](docs/part5/18-转型面试题库.md)
 
 - **可运行 Demo**
   - [01 最小ReAct Agent](demos/01-hello-react-agent/README.md)
   - [02 Plan-and-Solve Agent](demos/02-plan-and-solve-agent/README.md)
   - [03 Reflection Agent](demos/03-reflection-agent/README.md)
   - [04 迷你Agent框架](demos/04-mini-agent-framework/README.md)
+  - [05 最小可用RAG](demos/05-simple-memory-rag/README.md)
 
 - [进度看板 ROADMAP](ROADMAP.md)
