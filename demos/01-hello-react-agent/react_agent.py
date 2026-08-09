@@ -1,5 +1,5 @@
 """
-AgentCraft · Demo 01 —— 最小 ReAct Agent
+Harry 的 Agent 实战课 · Demo 01 —— 最小 ReAct Agent
 对应 docs/part1（认知基础）与即将发布的 Part 2 第05 章。
 
 一个不依赖任何 Agent 框架、从零手写的 ReAct（Reasoning + Acting）循环实现。

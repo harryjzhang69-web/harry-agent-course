@@ -13,8 +13,8 @@
 - **Part 3 · 高级能力** 🚧
   - [概览与进度](docs/part3/README.md)
 
-- **Part 4 · 真实项目复盘** 🚧
-  - [概览与进度](docs/part4/README.md)
+- **Part 4 · 真实项目复盘** 🔒付费¥99
+  - [内容预览与解锁方式](docs/part4/README.md)
 
 - **Part 5 · 毕业设计与展望** 🚧
   - [概览与进度](docs/part5/README.md)
