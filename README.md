@@ -19,13 +19,13 @@
 
 ## 全部内容，100% 免费开源
 
-我一直的产品哲学是"先把最核心、最能建立信任的部分完全开源免费"——这套课延续这个哲学，**前言 + Part 1~5 全部 18 章 + Part 4 三个真实项目复盘 + 5 个可运行 demo，全部公开、永久免费**，没有付费墙、没有解锁流程。
+我一直的产品哲学是"先把最核心、最能建立信任的部分完全开源免费"——这套课延续这个哲学，**前言 + Part 1~5 全部 19 章 + Part 4 三个真实项目复盘 + 6 个可运行 demo + 每章末尾5道单选自测题，全部公开、永久免费**，没有付费墙、没有解锁流程。
 
 | | 内容 | 状态 |
 |---|---|---|
-| **认知与方法论** | 前言 + Part 1 认知重建（4章）+ Part 2 亲手造轮子（4章）+ Part 3 高级能力（5章） | ✅ 本仓库完全公开 |
+| **认知与方法论** | 前言 + Part 1 认知重建（4章）+ Part 2 亲手造轮子（4章）+ Part 3 高级能力（6章，含新增Agent安全与风险治理） | ✅ 本仓库完全公开 |
 | **真实项目复盘** | Part 4 · 真实项目复盘（3 个我亲手做上线过的真实 Agent 项目：企业 IM 机器人 / 数据分析 Agent 架构演进 / 独立开发者一周产品） | ✅ 本仓库完全公开 |
-| **毕业设计与展望** | Part 5 · 毕业设计 Pitch + 转型面试题库（2章） | ✅ 本仓库完全公开 |
+| **毕业设计与展望** | Part 5 · 毕业设计 Pitch + 多智能体协作Capstone + 转型面试题库（2章） | ✅ 本仓库完全公开 |
 
 > 为什么把 Part 4 也开源：这三章是我真金白银踩坑换来的一手经验，市面上很少有人愿意无偿公开写这种东西。但既然要做一套真正能帮到转型/入门的人的免费内容，比起单独收费，我更想让它成为完整教程里不可或缺的一部分——一份"讲了道理却没有真实项目验证"的免费内容，价值是打折的。
 
@@ -64,15 +64,16 @@
 - [11 通信协议速查（MCP/A2A/ANP）](./docs/part3/11-通信协议速查.md)
 - [12 Agentic RL 产品经理版](./docs/part3/12-Agentic-RL产品经理版.md)
 - [13 Agent 评估体系与常见陷阱](./docs/part3/13-Agent评估体系与常见陷阱.md)
+- [14 Agent 安全与风险治理](./docs/part3/14-Agent安全与风险治理.md)
 
 ### Part 4 · 从Demo 到产品——真实项目复盘 ✅ 免费（三章已全部完稿）
-- [14 案例一：企业IM智能问答机器人](./docs/part4/14-企业IM智能问答机器人.md)
-- [15 案例二：数据分析Agent架构演进](./docs/part4/15-数据分析Agent架构演进.md)
-- [16 案例三：独立开发者一周产品](./docs/part4/16-独立开发者一周产品.md)
+- [15 案例一：企业IM智能问答机器人](./docs/part4/15-企业IM智能问答机器人.md)
+- [16 案例二：数据分析Agent架构演进](./docs/part4/16-数据分析Agent架构演进.md)
+- [17 案例三：独立开发者一周产品](./docs/part4/17-独立开发者一周产品.md)
 
 ### Part 5 · 毕业设计与展望 ✅ 免费
-- [17 毕业设计：你的 Agent 产品 Pitch](./docs/part5/17-毕业设计Pitch.md)
-- [18 转型面试题库（AI 产品经理 / Agent 工程师）](./docs/part5/18-转型面试题库.md)
+- [18 毕业设计：你的 Agent 产品 Pitch + 多智能体协作Capstone](./docs/part5/18-毕业设计Pitch.md)
+- [19 转型面试题库（AI 产品经理 / Agent 工程师）](./docs/part5/19-转型面试题库.md)
 
 ### 可运行 Demo（免费）
 - [demos/01-hello-react-agent](./demos/01-hello-react-agent)：5分钟跑起来的最小 ReAct Agent
@@ -80,6 +81,7 @@
 - [demos/03-reflection-agent](./demos/03-reflection-agent)：Reflection Agent
 - [demos/04-mini-agent-framework](./demos/04-mini-agent-framework)：迷你 Agent 框架（<300行）
 - [demos/05-simple-memory-rag](./demos/05-simple-memory-rag)：最小可用的检索增强记忆（RAG）
+- [demos/06-multi-agent-collab](./demos/06-multi-agent-collab)：多智能体协作（毕业设计Capstone）
 
 ## 怎么读
 

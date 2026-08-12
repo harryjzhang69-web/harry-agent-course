@@ -19,15 +19,16 @@
   - [11 通信协议速查](docs/part3/11-通信协议速查.md)
   - [12 Agentic RL产品经理版](docs/part3/12-Agentic-RL产品经理版.md)
   - [13 Agent评估体系与常见陷阱](docs/part3/13-Agent评估体系与常见陷阱.md)
+  - [14 Agent安全与风险治理](docs/part3/14-Agent安全与风险治理.md)
 
 - **Part 4 · 真实项目复盘** ✅免费
-  - [14 企业IM机器人](docs/part4/14-企业IM智能问答机器人.md)
-  - [15 数据分析Agent架构演进](docs/part4/15-数据分析Agent架构演进.md)
-  - [16 独立开发者一周产品](docs/part4/16-独立开发者一周产品.md)
+  - [15 企业IM机器人](docs/part4/15-企业IM智能问答机器人.md)
+  - [16 数据分析Agent架构演进](docs/part4/16-数据分析Agent架构演进.md)
+  - [17 独立开发者一周产品](docs/part4/17-独立开发者一周产品.md)
 
 - **Part 5 · 毕业设计与展望**
-  - [17 毕业设计Pitch](docs/part5/17-毕业设计Pitch.md)
-  - [18 转型面试题库](docs/part5/18-转型面试题库.md)
+  - [18 毕业设计Pitch+Capstone](docs/part5/18-毕业设计Pitch.md)
+  - [19 转型面试题库](docs/part5/19-转型面试题库.md)
 
 - **可运行 Demo**
   - [01 最小ReAct Agent](demos/01-hello-react-agent/README.md)
@@ -35,6 +36,7 @@
   - [03 Reflection Agent](demos/03-reflection-agent/README.md)
   - [04 迷你Agent框架](demos/04-mini-agent-framework/README.md)
   - [05 最小可用RAG](demos/05-simple-memory-rag/README.md)
+  - [06 多智能体协作](demos/06-multi-agent-collab/README.md)
 
 - [进度看板 ROADMAP](ROADMAP.md)
 - [← 返回课程首页](./index.html)
