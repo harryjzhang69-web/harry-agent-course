@@ -7,22 +7,14 @@
 ## 全景图
 
 ```mermaid
-timeline
-    title Agent 技术范式演进
-    1950s-1980s : 符号主义 AI
-                : 逻辑规则 + 知识表示
-    1980s-1990s : 专家系统
-                : 领域规则库 + 推理机
-    1990s-2010s : 行为主义 / 强化学习
-                :试错学习 + AlphaGo
-    2012-2020   : 深度学习感知层
-                : 图像/语音识别突破，但仍是"单点能力"
-    2022-2023   : LLM 驱动 Agent 元年
-                : ReAct 论文 + ChatGPT 插件
-    2024-2025   : 框架与生态爆发
-                : LangGraph/AutoGen + Agent 元年
-    2025至今    : 多智能体协作+ Agentic RL
-                : 团队级协作 + 训练闭环
+flowchart TD
+    A["1950s-1980s<br/>符号主义 AI<br/>逻辑规则 + 知识表示"] --> B["1980s-1990s<br/>专家系统<br/>领域规则库 + 推理机"]
+    B --> C["1990s-2010s<br/>行为主义 / 强化学习<br/>试错学习 + AlphaGo"]
+    C --> D["2012-2020<br/>深度学习感知层<br/>图像/语音突破，但仍是单点能力"]
+    D --> E["2022-2023<br/>LLM 驱动 Agent 元年<br/>ReAct 论文 + ChatGPT 插件"]
+    E --> F["2024-2025<br/>框架与生态爆发<br/>LangGraph / AutoGen"]
+    F --> G["2025至今<br/>多智能体协作 + Agentic RL<br/>团队级协作 + 训练闭环"]
+    style G fill:#5b6cf5,color:#fff
 ```
 
 ## 每个阶段到底发生了什么
