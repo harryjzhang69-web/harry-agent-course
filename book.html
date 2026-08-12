@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>Harry的Agent实战课 · 从认知到产品打造你的 AI Agent</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta name="description" content="清华学长harry出品·AI产品手艺人系列：从认知到产品，手把手打造你的 AI Agent，全部内容永久免费开源" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+  <style>
+    :root { --theme-color: #5b6cf5; }
+    body { -webkit-font-smoothing: antialiased; }
+    .sidebar-nav li:last-child a { color: #5b6cf5; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: "Harry的Agent实战课",
+      repo: 'harryjzhang69-web/harry-agent-course',
+      loadSidebar: true,
+      loadNavbar: false,
+      subMaxLevel: 2,
+      auto2top: true,
+      coverpage: true,
+      onlyCover: false,
+      themeColor: '#5b6cf5',
+      search: {
+        maxAge: 86400000,
+        placeholder: '搜索章节内容...',
+        noData: '没有找到结果',
+        depth: 3
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-mermaid@2.0.1/dist/docsify-mermaid.js"></script>
+</body>
+</html>

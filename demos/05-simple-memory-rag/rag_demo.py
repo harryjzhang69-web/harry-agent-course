@@ -58,8 +58,8 @@ class SimpleVectorStore:
 def build_demo_knowledge_base(store: SimpleVectorStore) -> None:
     """写入几条示例知识，方便直接体验检索效果。"""
     knowledge = [
-        ("course-intro", "Harry的Agent实战课核心内容永久免费，包括前言、Part1认知重建、Part2亲手造轮子、Part3高级能力、Part5毕业设计与展望。"),
-        ("part4-pricing", "Part4真实项目复盘单独定价99元，因为这部分是作者亲手做过上线项目的一手踩坑经验，市面上很少有人会无偿公开写这种真实案例。"),
+        ("course-intro", "Harry的Agent实战课全部内容永久免费开源，包括前言、Part1认知重建、Part2亲手造轮子、Part3高级能力、Part4真实项目复盘、Part5毕业设计与展望。"),
+        ("part4-cases", "Part4真实项目复盘是三个作者亲手做过上线项目的一手踩坑经验案例，市面上很少有人会无偿公开写这种真实案例，这三章现在也全部免费开源。"),
         ("react-pattern", "ReAct范式的核心是让模型一边思考一边行动，每一步的决策都建立在上一步真实的工具执行结果之上，适合任务路径需要根据中间结果动态调整的场景。"),
         ("agent-maturity", "Agent产品成熟度分级L0到L3：L0是规则脚本自动化，L1是单轮工具调用，L2是自主规划循环，L3是多智能体协作，级别越高不可控性和成本也越高。"),
         ("unrelated-fact", "番茄炒蛋是一道常见的家常菜，主要食材是番茄和鸡蛋，做法简单，很多人的入门菜。"),

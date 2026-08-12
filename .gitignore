@@ -8,6 +8,3 @@ node_modules/
 *.log
 .idea/
 .vscode/
-
-# Part4付费内容完整版，永远不进公开仓库，只在本地/交付给购买用户
-_paid_content_part4/

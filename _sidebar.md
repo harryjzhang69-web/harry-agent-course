@@ -20,11 +20,10 @@
   - [12 Agentic RL产品经理版](docs/part3/12-Agentic-RL产品经理版.md)
   - [13 Agent评估体系与常见陷阱](docs/part3/13-Agent评估体系与常见陷阱.md)
 
-- **Part 4 · 真实项目复盘** 🔒付费¥99
-  - [14 企业IM机器人(试读)](docs/part4/14-企业IM智能问答机器人.md)
-  - [15 数据分析Agent架构演进(试读)](docs/part4/15-数据分析Agent架构演进.md)
-  - [16 独立开发者一周产品(试读)](docs/part4/16-独立开发者一周产品.md)
-  - [解锁方式](docs/part4/README.md)
+- **Part 4 · 真实项目复盘** ✅免费
+  - [14 企业IM机器人](docs/part4/14-企业IM智能问答机器人.md)
+  - [15 数据分析Agent架构演进](docs/part4/15-数据分析Agent架构演进.md)
+  - [16 独立开发者一周产品](docs/part4/16-独立开发者一周产品.md)
 
 - **Part 5 · 毕业设计与展望**
   - [17 毕业设计Pitch](docs/part5/17-毕业设计Pitch.md)
@@ -38,3 +37,4 @@
   - [05 最小可用RAG](demos/05-simple-memory-rag/README.md)
 
 - [进度看板 ROADMAP](ROADMAP.md)
+- [← 返回课程首页](./index.html)

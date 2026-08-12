@@ -1,40 +1,322 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <title>Harry的Agent实战课 · 从认知到产品打造你的 AI Agent</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
-  <meta name="description" content="清华学长harry出品·AI产品手艺人系列：从认知到产品，手把手打造你的 AI Agent，核心内容免费，进阶案例解锁" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
-  <style>
-    :root { --theme-color: #6c5ce7; }
-    body { -webkit-font-smoothing: antialiased; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Harry 的 Agent 实战课 · 从认知到产品，亲手打造你的 AI Agent</title>
+<meta name="description" content="清华学长harry出品·AI产品手艺人系列课程：18章方法论 + 3个真实项目复盘 + 5个可运行Demo，全部内容永久免费开源。工程+产品双视角，每章配一个能跑起来的东西。" />
+<meta name="keywords" content="AI Agent 教程, Agent 实战课, AI 产品经理转型, ReAct, LangGraph, MCP协议, Agent产品成熟度, Dify教程, Agent开源课程" />
+<meta name="author" content="Harry Zhang" />
+
+<meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#08090a" media="(prefers-color-scheme: dark)" />
+<link rel="canonical" href="https://harryjzhang69-web.github.io/harry-agent-course/" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./assets/style.css" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Harry 的 Agent 实战课 · 从认知到产品打造你的 AI Agent" />
+<meta property="og:description" content="18章方法论 + 3个真实项目复盘 + 5个可运行Demo，全部永久免费开源。" />
+<meta property="og:url" content="https://harryjzhang69-web.github.io/harry-agent-course/" />
+<meta property="og:locale" content="zh_CN" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Harry 的 Agent 实战课",
+  "description": "从认知到产品，亲手打造你的 AI Agent。18章方法论+3个真实项目复盘+5个可运行Demo，全部免费开源。",
+  "provider": { "@type": "Person", "name": "Harry Zhang", "sameAs": "https://github.com/harryjzhang69-web" },
+  "isAccessibleForFree": true
+}
+</script>
 </head>
 <body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: "Harry的Agent实战课",
-      repo: 'harryjzhang69-web/harry-agent-course',
-      loadSidebar: true,
-      loadNavbar: false,
-      subMaxLevel: 2,
-      auto2top: true,
-      coverpage: true,
-      onlyCover: false,
-      themeColor: '#6c5ce7',
-      search: {
-        maxAge: 86400000,
-        placeholder: '搜索章节内容...',
-        noData: '没有找到结果',
-        depth: 3
-      }
+
+<nav class="topnav">
+  <div class="topnav-inner">
+    <a href="#" class="logo">
+      <span class="logo-mark"></span>
+      <span>Harry 的 Agent 实战课</span>
+    </a>
+    <div class="topnav-links">
+      <a href="#curriculum">课程大纲</a>
+      <a href="#cases">真实案例</a>
+      <a href="#compare">有何不同</a>
+      <a href="#about">关于作者</a>
+    </div>
+    <a href="./book.html#/" class="topnav-cta">开始阅读 <span>→</span></a>
+    <button class="theme-btn" onclick="toggleTheme()" aria-label="切换主题">
+      <svg class="theme-icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="theme-icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ============= HERO ============= -->
+  <header class="hero container">
+    <div class="hero-tag"><span class="dot"></span>FREE & OPEN SOURCE · 18章方法论 + 3个真实案例 + 5个可运行 Demo</div>
+    <h1 class="hero-title">从认知到产品，亲手打造你的 <span class="hl">AI Agent</span>。</h1>
+    <p class="hero-sub">
+      清华学长 harry 出品的 AI 产品手艺人系列课程。<strong>工程 + 产品双视角</strong>，每章配一个能跑起来的东西——不是又一份读完就忘的教程，也不是教学向的虚构案例，全部内容永久免费、完全开源。
+    </p>
+    <div class="hero-cta">
+      <a href="./book.html#/" class="btn btn-primary">开始免费阅读 <span class="btn-arrow">→</span></a>
+      <a href="#curriculum" class="btn btn-ghost">查看课程大纲</a>
+    </div>
+    <div class="hero-credentials">
+      <span>清华硕士</span><span class="cred-dot">·</span>
+      <span>前腾讯游戏产品经理</span><span class="cred-dot">·</span>
+      <span>现独立 AI 产品手艺人</span>
+    </div>
+
+    <div class="metrics-grid">
+      <div class="metric"><strong>18</strong><span class="metric-label">章方法论正文</span></div>
+      <div class="metric"><strong>3</strong><span class="metric-label">个真实项目复盘</span></div>
+      <div class="metric"><strong>5</strong><span class="metric-label">个可运行 Demo</span></div>
+      <div class="metric"><strong>100%</strong><span class="metric-label">免费开源</span></div>
+    </div>
+  </header>
+
+  <!-- ============= 适合谁 ============= -->
+  <div class="rule"><span class="rule-tag">FOR WHO</span><span class="rule-line"></span></div>
+  <section class="block-narrow">
+    <div class="block-head">
+      <span class="block-num">START</span>
+      <h2>这门课不教你"怎么写 Agent 代码"，教你一套完整判断力</h2>
+      <p class="block-intro">市面上讲 Agent 范式/框架的教程很多，但大多只回答"怎么实现"。这套课额外回答"为什么这样设计、值不值得做、真实项目里会踩什么坑"——这是产品经理每天要做的决策，也是工程师最容易忽视的一层。</p>
+    </div>
+    <div class="about-text" style="max-width:640px;">
+      <p><strong>转型 AI 产品经理的人</strong>：按 Part 1 → Part 5 顺序读，代码部分可以跳过实现细节，重点看每章的"决策清单"；Part 4 的真实项目复盘可以当作"怎么把方法论用在真实场景里"的参照。</p>
+      <p><strong>工程师 / 想动手实现的人</strong>：Part 1 快速过一遍建立框架感，然后重点啃 Part 2、Part 3，把 5 个 demo 都跑一遍。</p>
+      <p><strong>独立开发者</strong>：先读 Part 5 毕业设计方法论，再"抄作业式"参照 Part 4 里独立开发者一周产品的真实架构演进过程。</p>
+      <p style="color:var(--text-2);font-size:14px;border-top:1px dashed var(--line);padding-top:14px;margin-top:6px;"><strong style="color:var(--text-2);">不太适合谁</strong>：如果你要找的是"复制粘贴就能用的完整产品代码"或者"零基础学 Python"，这里没有——这套课假设你已经会写代码或至少能看懂代码，讲的是判断力而不是语法。</p>
+    </div>
+  </section>
+
+  <!-- ============= 为什么免费 ============= -->
+  <div class="rule"><span class="rule-tag">WHY FREE</span><span class="rule-line"></span></div>
+  <section class="block-narrow">
+    <div class="block-head">
+      <span class="block-num">为什么全部免费</span>
+      <h2>不是阉割版，是真心觉得该这么做</h2>
+    </div>
+    <div class="about-text" style="max-width:640px;">
+      <p>2026 年了，AI 已经把"知识讲解"这件事的边际成本打到接近零——你问 AI 一个 Agent 概念，得到的解释不会比大多数收费课程差。<strong>继续单独卖"内容"本身，价值正在快速缩水</strong>，这也是我把 Part 4 的三个真实项目复盘（原本设计为付费部分）也一并开源的原因：既然内容本身很难再构成壁垒，不如让它完全免费，把信任建立起来。</p>
+      <p>我真正想做的生意，是<a href="https://harryjzhang69-web.github.io/personal-site/#consulting" target="_blank" rel="noopener" style="color:var(--accent);border-bottom:1px solid var(--accent-soft);">企业 AI 落地咨询 / 1v1 战略陪伴</a>这类"结果服务"——这门课就是最诚实的作品展示：如果你读完觉得这套判断框架对你有用，想要更具体、针对你自己场景的深度指导，欢迎找我聊。这门课不会因为这样而缩水，该讲的坑我都写了。</p>
+    </div>
+  </section>
+
+  <!-- ============= 课程大纲 ============= -->
+  <div class="rule" id="curriculum"><span class="rule-tag">FIG · 01</span><span class="rule-line"></span><span class="rule-tag">CURRICULUM</span></div>
+  <section class="block">
+    <div class="block-head">
+      <span class="block-num">课程大纲</span>
+      <h2>5 个 Part，18 章正文，全部免费</h2>
+      <p class="block-intro">从"是什么"到"怎么做"到"怎么做得更好"到"真实世界怎么落地"到"怎么讲给别人听"——一条完整闭环。</p>
+    </div>
+
+    <div class="curriculum-grid">
+      <div class="curr-card">
+        <div class="curr-card-head"><span class="curr-num">PART 1</span><h3>认知重建</h3></div>
+        <span class="curr-card-tag">Agent 到底是什么，别被概念忽悠</span>
+        <ul class="curr-list">
+          <li>01 Agent 不是新物种：连续谱而非开关</li>
+          <li>02 一张图看懂 Agent 进化史</li>
+          <li>03 大模型是发动机，不是车</li>
+          <li>04 Agent 产品成熟度分级 L0~L3（原创框架）</li>
+        </ul>
+      </div>
+
+      <div class="curr-card">
+        <div class="curr-card-head"><span class="curr-num">PART 2</span><h3>亲手造轮子</h3></div>
+        <span class="curr-card-tag">从 Prompt 到框架</span>
+        <ul class="curr-list">
+          <li>05 三大经典范式手把手实现（ReAct/Plan-and-Solve/Reflection）</li>
+          <li>06 低代码平台怎么选（Dify/Coze/n8n）</li>
+          <li>07 主流框架产品化评测（LangGraph/AutoGen/AgentScope）</li>
+          <li>08 从零写一个 &lt;300 行的 Agent 框架</li>
+        </ul>
+      </div>
+
+      <div class="curr-card">
+        <div class="curr-card-head"><span class="curr-num">PART 3</span><h3>让 Agent 活起来</h3></div>
+        <span class="curr-card-tag">记忆、上下文、协议、训练、评估</span>
+        <ul class="curr-list">
+          <li>09 记忆与检索</li>
+          <li>10 上下文工程</li>
+          <li>11 通信协议速查（MCP/A2A/ANP）</li>
+          <li>12 Agentic RL 产品经理版</li>
+          <li>13 Agent 评估体系与常见陷阱</li>
+        </ul>
+      </div>
+
+      <div class="curr-card featured">
+        <div class="curr-card-head"><span class="curr-num">PART 4</span><h3>真实项目复盘</h3></div>
+        <span class="curr-card-tag">全部真实上线过的项目，非虚构案例</span>
+        <ul class="curr-list">
+          <li>14 企业 IM 智能问答机器人</li>
+          <li>15 数据分析 Agent 架构演进</li>
+          <li>16 独立开发者一周做出 AI 小产品</li>
+        </ul>
+      </div>
+
+      <div class="curr-card">
+        <div class="curr-card-head"><span class="curr-num">PART 5</span><h3>毕业设计与展望</h3></div>
+        <span class="curr-card-tag">收束成能讲给别人听的 Pitch</span>
+        <ul class="curr-list">
+          <li>17 毕业设计：你的 Agent 产品 Pitch</li>
+          <li>18 转型面试题库（AI PM / Agent 工程师）</li>
+        </ul>
+      </div>
+
+      <div class="curr-card">
+        <div class="curr-card-head"><span class="curr-num">DEMO</span><h3>5 个可运行 Demo</h3></div>
+        <span class="curr-card-tag">每个都能 5 分钟跑起来</span>
+        <div class="demo-chip-row">
+          <span class="demo-chip"><span class="demo-chip-num">01</span>ReAct Agent</span>
+          <span class="demo-chip"><span class="demo-chip-num">02</span>Plan-and-Solve</span>
+          <span class="demo-chip"><span class="demo-chip-num">03</span>Reflection</span>
+          <span class="demo-chip"><span class="demo-chip-num">04</span>迷你框架</span>
+          <span class="demo-chip"><span class="demo-chip-num">05</span>最小RAG</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= 真实案例复盘 ============= -->
+  <div class="rule" id="cases"><span class="rule-tag">FIG · 02</span><span class="rule-line"></span><span class="rule-tag">REAL CASES</span></div>
+  <section class="block">
+    <div class="block-head">
+      <span class="block-num">真实项目复盘</span>
+      <h2>不是教学案例，是我自己真实做上线过的项目</h2>
+      <p class="block-intro">保留了排查过程、错误方案、真实耗时——这是市面上大多数 Agent 教程会省略掉的部分。</p>
+    </div>
+    <div class="case-grid">
+      <a class="case-card" href="./book.html#/docs/part4/14-企业IM智能问答机器人">
+        <div class="case-glyph">01</div>
+        <div>
+          <span class="case-tag">架构演进</span>
+          <h3>企业 IM 智能问答机器人</h3>
+          <p>从 Dify 工作流 MVP，到真实踩过的"企微 HTTP body 解析"核心 Bug 完整排查，再到重构为 MCP Server + REST API 共享业务逻辑架构。</p>
+        </div>
+      </a>
+      <a class="case-card" href="./book.html#/docs/part4/15-数据分析Agent架构演进">
+        <div class="case-glyph">02</div>
+        <div>
+          <span class="case-tag">五版迭代</span>
+          <h3>数据分析 Agent 架构演进</h3>
+          <p>一个游戏数据报表智能问答系统的真实迭代：关键词覆盖 / 图表精确匹配 / 时间解析 / 错误检测四层加固，每一层都是真实踩过的坑。</p>
+        </div>
+      </a>
+      <a class="case-card" href="./book.html#/docs/part4/16-独立开发者一周产品">
+        <div class="case-glyph">03</div>
+        <div>
+          <span class="case-tag">独立开发</span>
+          <h3>一周做出 AI 小产品</h3>
+          <p>从 Flask 本地验证到公网 Serverless 部署的完整过程，含一段"看起来是同一问题实际是三个根因"的疑难排查全纪录 + 一周时间线真实分配表。</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============= 跟别的教程有什么不同 ============= -->
+  <div class="rule" id="compare"><span class="rule-tag">FIG · 03</span><span class="rule-line"></span><span class="rule-tag">WHY DIFFERENT</span></div>
+  <section class="block">
+    <div class="block-head">
+      <span class="block-num">有何不同</span>
+      <h2>跟别的 Agent 教程比，这套课不一样在哪</h2>
+    </div>
+    <div class="compare-wrap">
+      <table class="compare-table">
+        <thead><tr><th></th><th>常见的 Agent 教程</th><th>本课程</th></tr></thead>
+        <tbody>
+          <tr><td>视角</td><td>纯工程视角，讲怎么实现</td><td class="col-us">工程 + 产品双视角，也讲为什么这样设计、值不值得做</td></tr>
+          <tr><td>案例</td><td>教学向虚拟案例（旅行助手 Demo 等）</td><td class="col-us">附带真实上线过的项目复盘（企业 IM 机器人、数据分析 Agent）</td></tr>
+          <tr><td>结构</td><td>章节讲完概念/代码就结束</td><td class="col-us">每章末尾固定一份「产品经理决策清单」，把知识变成判断力</td></tr>
+          <tr><td>交付物</td><td>学完记笔记</td><td class="col-us">学完至少落地一个能跑的 mini demo，下载即用</td></tr>
+          <tr><td>价格</td><td>免费/付费混合，深度内容常需解锁</td><td class="col-us">全部 18 章 + 3 个真实案例，100% 免费开源</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============= 关于作者 ============= -->
+  <div class="rule" id="about"><span class="rule-tag">FIG · 04</span><span class="rule-line"></span><span class="rule-tag">ABOUT</span></div>
+  <section class="block">
+    <div class="block-head">
+      <span class="block-num">关于作者</span>
+      <h2>Harry · 清华硕士，现独立 AI 产品手艺人</h2>
+    </div>
+    <div class="about-flex">
+      <div class="about-text">
+        <p>清华大学硕士毕业，前腾讯游戏产品经理，参与过反外挂、举报治理、UGC 内容安全等方向的产品工作。现在专职做「AI 产品手艺人」——不追求大平台，只做小而美、下载即用的 AI 产品和工具。</p>
+        <p>这套课延续同样的手艺人风格：<strong>每一章都配一个能跑起来的东西，不是纯理论</strong>。内容、结构、代码全部原创，仅在"为什么要做一套体系化 Agent 教程"这件事上，受到 Datawhale 社区 <a href="https://github.com/datawhalechina/hello-agents" style="color:var(--accent);border-bottom:1px solid var(--accent-soft);">hello-agents</a> 的启发。</p>
+      </div>
+      <div class="about-links">
+        <a class="about-link-card" href="https://harryjzhang69-web.github.io/personal-site/" target="_blank" rel="noopener">
+          <span class="about-link-label">个人网站</span>
+          <span class="about-link-value">harryjzhang69-web.github.io/personal-site →</span>
+        </a>
+        <a class="about-link-card" href="https://github.com/harryjzhang69-web/harry-agent-course" target="_blank" rel="noopener">
+          <span class="about-link-label">GitHub 仓库</span>
+          <span class="about-link-value">harry-agent-course →</span>
+        </a>
+        <div class="about-link-card">
+          <span class="about-link-label">联系方式</span>
+          <span class="about-link-value">微信 jialin_69 · 公众号「AI产品手艺人」</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= FINAL CTA ============= -->
+  <section class="block">
+    <div class="final-cta">
+      <h2>现在就开始，从「00 前言」读起</h2>
+      <p>全部内容永久免费，不需要注册、不需要付费、不需要解锁。</p>
+      <div class="hero-cta">
+        <a href="./book.html#/" class="btn btn-primary">开始免费阅读 <span class="btn-arrow">→</span></a>
+        <a href="https://harryjzhang69-web.github.io/personal-site/#consulting" target="_blank" rel="noopener" class="btn btn-ghost">想要更深度的1v1指导 →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-links">
+    <a href="./book.html#/">内容阅读器</a>
+    <a href="https://github.com/harryjzhang69-web/harry-agent-course" target="_blank" rel="noopener">GitHub</a>
+    <a href="./ROADMAP.md">进度看板</a>
+    <a href="https://harryjzhang69-web.github.io/personal-site/" target="_blank" rel="noopener">作者个人网站</a>
+  </div>
+  <div class="footer-meta">CC BY-NC-SA 4.0 · 代码 MIT License · © 2026 Harry</div>
+</footer>
+
+<script>
+  (function () {
+    var saved = localStorage.getItem('agentcraft-theme');
+    if (saved === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+  })();
+  function toggleTheme() {
+    var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('agentcraft-theme', 'light');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('agentcraft-theme', 'dark');
     }
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  }
+</script>
+
 </body>
 </html>
