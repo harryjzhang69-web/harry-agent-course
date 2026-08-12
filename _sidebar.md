@@ -39,4 +39,4 @@
   - [06 多智能体协作](demos/06-multi-agent-collab/README.md)
 
 - [进度看板 ROADMAP](ROADMAP.md)
-- [← 返回课程首页](./index.html)
+- [← 返回课程首页](https://harryjzhang69-web.github.io/harry-agent-course/index.html)
