@@ -1,5 +1,7 @@
 # Part 1 · 认知重建
 
+![Part 1 封面：从齿轮到神经网络的Agent进化谱系](../../assets/images/part1-cover.png)
+
 > 别急着学怎么写代码。先把"Agent 到底是什么"这件事想清楚，否则你搭出来的东西自己都说不清是不是 Agent。
 
 本Part 共4 章，读完你会获得：
