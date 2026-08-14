@@ -47,18 +47,21 @@
 - [00 前言：我为什么要写这套东西](./docs/00-前言.md)
 
 ### Part 1 · 认知重建——Agent 到底是什么，别被概念忽悠 ✅ 免费
+- [Part 1 导读](./docs/part1/README.md)
 - [01 Agent 不是新物种：从自动化脚本到自主智能体的连续谱](./docs/part1/01-Agent不是新物种.md)
 - [02 一张图看懂 Agent 进化史](./docs/part1/02-一张图看懂Agent进化史.md)
 - [03 大模型是发动机，不是车](./docs/part1/03-大模型是发动机不是车.md)
 - [04 Agent 产品成熟度分级：L0~L3](./docs/part1/04-Agent产品成熟度分级.md)
 
 ### Part 2 ·亲手造轮子——从 Prompt 到框架 ✅ 免费
+- [Part 2 导读](./docs/part2/README.md)
 - [05 三大经典范式手把手实现（ReAct/Plan-and-Solve/Reflection）](./docs/part2/05-三大经典范式手把手实现.md)
 - [06 低代码平台怎么选（Dify/Coze/n8n）](./docs/part2/06-低代码平台怎么选.md)
 - [07 主流框架产品化评测（LangGraph/AutoGen/AgentScope）](./docs/part2/07-主流框架产品化评测.md)
 - [08 从零写一个 <300 行的 Agent 框架](./docs/part2/08-从零写一个Agent框架.md)
 
 ### Part 3 · 让Agent 活起来——高级能力 ✅ 免费
+- [Part 3 导读](./docs/part3/README.md)
 - [09 记忆与检索](./docs/part3/09-记忆与检索.md)
 - [10 上下文工程](./docs/part3/10-上下文工程.md)
 - [11 通信协议速查（MCP/A2A/ANP）](./docs/part3/11-通信协议速查.md)
@@ -67,11 +70,13 @@
 - [14 Agent 安全与风险治理](./docs/part3/14-Agent安全与风险治理.md)
 
 ### Part 4 · 从Demo 到产品——真实项目复盘 ✅ 免费（三章已全部完稿）
+- [Part 4 导读](./docs/part4/README.md)
 - [15 案例一：企业IM智能问答机器人](./docs/part4/15-企业IM智能问答机器人.md)
 - [16 案例二：数据分析Agent架构演进](./docs/part4/16-数据分析Agent架构演进.md)
 - [17 案例三：独立开发者一周产品](./docs/part4/17-独立开发者一周产品.md)
 
 ### Part 5 · 毕业设计与展望 ✅ 免费
+- [Part 5 导读](./docs/part5/README.md)
 - [18 毕业设计：你的 Agent 产品 Pitch + 多智能体协作Capstone](./docs/part5/18-毕业设计Pitch.md)
 - [19 转型面试题库（AI 产品经理 / Agent 工程师）](./docs/part5/19-转型面试题库.md)
 
