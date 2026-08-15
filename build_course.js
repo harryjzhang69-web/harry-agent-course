@@ -43,6 +43,12 @@ const PARTS = [
     cover: '../assets/images/part5-cover.png',
     chapters: ['18-毕业设计Pitch', '19-转型面试题库'],
   },
+  {
+    id: 'part6', title: 'Part 6 · 产品化跃升',
+    tagline: '多模态、AB测试、商业化、团队协作——从能跑到能规模化',
+    cover: '../assets/images/part6-cover.png',
+    chapters: ['20-多模态Agent专题', '21-Agent产品AB测试方法论', '22-Agent产品商业化与定价模式', '23-团队协作与项目管理'],
+  },
 ];
 
 // 解析单行选项：A. xxx　B. xxx　C. xxx　D. xxx（全角空格分隔）

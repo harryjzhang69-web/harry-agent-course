@@ -30,6 +30,12 @@
   - [18 毕业设计Pitch+Capstone](docs/part5/18-毕业设计Pitch.md)
   - [19 转型面试题库](docs/part5/19-转型面试题库.md)
 
+- [**Part 6 · 产品化跃升**](docs/part6/README.md) 🆕
+  - [20 多模态Agent专题](docs/part6/20-多模态Agent专题.md)
+  - [21 Agent产品AB测试方法论](docs/part6/21-Agent产品AB测试方法论.md)
+  - [22 Agent产品商业化与定价模式](docs/part6/22-Agent产品商业化与定价模式.md)
+  - [23 团队协作与项目管理](docs/part6/23-团队协作与项目管理.md)
+
 - [**可运行 Demo**](demos/README.md)
   - [01 最小ReAct Agent](demos/01-hello-react-agent/README.md)
   - [02 Plan-and-Solve Agent](demos/02-plan-and-solve-agent/README.md)
