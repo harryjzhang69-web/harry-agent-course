@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI 前沿论文日报 · Harry的Agent实战课</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta name="description" content="每天自动从arXiv抓取LLM/Agent/多模态/强化学习/对齐等方向最新论文，AI生成中文深度解读，全自动、不依赖任何设备，每日更新" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+  <style>
+    :root { --theme-color: #5b6cf5; }
+    body { -webkit-font-smoothing: antialiased; }
+    .sidebar-nav li:last-child a { color: #5b6cf5; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: "📚 AI 前沿论文日报",
+      repo: 'harryjzhang69-web/harry-agent-course',
+      loadSidebar: true,
+      loadNavbar: false,
+      subMaxLevel: 2,
+      auto2top: true,
+      coverpage: false,
+      themeColor: '#5b6cf5',
+      search: {
+        maxAge: 86400000,
+        placeholder: '搜索论文标题/关键词...',
+        noData: '没有找到结果',
+        depth: 2
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+</body>
+</html>

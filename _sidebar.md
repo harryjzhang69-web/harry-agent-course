@@ -39,5 +39,6 @@
   - [06 多智能体协作](demos/06-multi-agent-collab/README.md)
 
 - [🎮 交互式学习机（闯关学）](https://harryjzhang69-web.github.io/harry-agent-course/app/)
+- [📚 AI前沿论文日报](https://harryjzhang69-web.github.io/harry-agent-course/papers/index.html)
 - [进度看板 ROADMAP](ROADMAP.md)
 - [← 返回课程首页](https://harryjzhang69-web.github.io/harry-agent-course/index.html)
