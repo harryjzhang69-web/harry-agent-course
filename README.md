@@ -88,6 +88,9 @@
 - [22 Agent 产品商业化与定价模式](./docs/part6/22-Agent产品商业化与定价模式.md)
 - [23 团队协作与项目管理：怎么带团队把 Agent 项目做成](./docs/part6/23-团队协作与项目管理.md)
 
+### 番外篇 · 手把手实战教程 🆕（持续更新，不计入主线23章）
+- [番外01 零代码实战：用 Coze 从0到1搭一个「AI产品经理面试陪练」Bot（保姆级教程，配截图占位）](./docs/bonus/番外01-Coze保姆级实战教程.md)
+
 ### 可运行 Demo（免费）
 - [demos/01-hello-react-agent](./demos/01-hello-react-agent)：5分钟跑起来的最小 ReAct Agent
 - [demos/02-plan-and-solve-agent](./demos/02-plan-and-solve-agent)：Plan-and-Solve Agent

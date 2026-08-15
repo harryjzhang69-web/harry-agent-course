@@ -36,6 +36,9 @@
   - [22 Agent产品商业化与定价模式](docs/part6/22-Agent产品商业化与定价模式.md)
   - [23 团队协作与项目管理](docs/part6/23-团队协作与项目管理.md)
 
+- **番外篇 · 手把手实战** 🆕
+  - [番外01 Coze保姆级实战教程](docs/bonus/番外01-Coze保姆级实战教程.md)
+
 - [**可运行 Demo**](demos/README.md)
   - [01 最小ReAct Agent](demos/01-hello-react-agent/README.md)
   - [02 Plan-and-Solve Agent](demos/02-plan-and-solve-agent/README.md)
