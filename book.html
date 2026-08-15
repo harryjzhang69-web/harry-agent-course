@@ -30,7 +30,23 @@
         placeholder: '搜索章节内容...',
         noData: '没有找到结果',
         depth: 3
-      }
+      },
+      plugins: [
+        function (hook) {
+          var ctaHtml = ''
+            + '<div style="margin-top:48px;padding:20px 22px;border:1px solid rgba(91,108,245,0.25);'
+            + 'border-radius:12px;background:rgba(91,108,245,0.06);font-size:14px;line-height:1.9;">'
+            + '<strong style="color:#5b6cf5;">💬 这套内容对你有帮助吗？</strong><br/>'
+            + '全部内容永久免费，如果觉得有用，欢迎 <a href="https://github.com/harryjzhang69-web/harry-agent-course" target="_blank">Star ⭐ 这个仓库</a>，也欢迎来找我聊：<br/>'
+            + '公众号「<strong>AI 产品手艺人</strong>」 · 小红书 <strong>@清华学长harry</strong> · 微信 <strong>jialin_69</strong> · '
+            + '<a href="https://harryjzhang69-web.github.io/harry-agent-course/app/" target="_blank">🎮 试试交互式学习机</a> · '
+            + '<a href="https://harryjzhang69-web.github.io/harry-agent-course/papers/index.html" target="_blank">📚 AI前沿论文日报</a>'
+            + '</div>';
+          hook.afterEach(function (html) {
+            return html + ctaHtml;
+          });
+        }
+      ]
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>

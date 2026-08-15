@@ -125,6 +125,10 @@ Harry，清华大学硕士，前腾讯游戏产品经理，现在专职做「AI 
 - 微信：jialin_69
 - 邮箱：2385069706@qq.com
 
+## 项目热度
+
+[![Star History Chart](https://api.star-history.com/svg?repos=harryjzhang69-web/harry-agent-course&type=Date)](https://star-history.com/#harryjzhang69-web/harry-agent-course&Date)
+
 ## 协议与致谢
 
 - 全部文档内容遵循 [CC BY-NC-SA 4.0](./LICENSE-DOCS.md)（署名-非商业性使用-相同方式共享）
