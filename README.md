@@ -102,6 +102,14 @@
 - **工程师 / 想动手实现的人**：Part 1 快速过一遍建立框架感，然后重点啃 Part 2、Part 3，把 demo 都跑一遍。
 - **独立开发者**：先读 Part 5 毕业设计方法论，再"抄作业式"参照 Part 4 里独立开发者一周产品的真实架构演进过程。
 
+## 📥 下载完整版 PDF
+
+不想在线读？可以下载完整 PDF 离线看（含封面+目录+全部6个Part 23章正文，共202页）：
+
+**[⬇️ 点击下载 Harry的Agent实战课-完整版.pdf](https://harryjzhang69-web.github.io/harry-agent-course/downloads/Harry%E7%9A%84Agent%E5%AE%9E%E6%88%98%E8%AF%BE-%E5%AE%8C%E6%95%B4%E7%89%88.pdf)**
+
+> 请遵守 CC BY-NC-SA 4.0 协议：可以自由分享转发，但请注明出处，不得用于商业售卖。
+
 ## 快速开始（全部内容 + Demo）
 
 ```bash

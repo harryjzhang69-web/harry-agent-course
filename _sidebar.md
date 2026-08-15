@@ -46,5 +46,6 @@
 
 - [🎮 交互式学习机（闯关学）](https://harryjzhang69-web.github.io/harry-agent-course/app/)
 - [📚 AI前沿论文日报](https://harryjzhang69-web.github.io/harry-agent-course/papers/index.html)
+- [⬇️ 下载完整版PDF](https://harryjzhang69-web.github.io/harry-agent-course/downloads/Harry%E7%9A%84Agent%E5%AE%9E%E6%88%98%E8%AF%BE-%E5%AE%8C%E6%95%B4%E7%89%88.pdf)
 - [进度看板 ROADMAP](ROADMAP.md)
 - [← 返回课程首页](https://harryjzhang69-web.github.io/harry-agent-course/index.html)
