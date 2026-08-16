@@ -6,7 +6,7 @@ demos/07-personal-brand-agent/backend/agents.py
 
 设计对应课程 番外02「多智能体协作设计」小节，风格参照
 Part2 第05章 ReAct 手写实现 + demos/06-multi-agent-collab 的协作模式：
-- 每个 Agent 职责单一、边界清晰（呼应 Part6 第23章"场景样例+护栏前置"的任务分工思路）
+- 每个 Agent 职责单一、边界清晰（呼应 Part6 第24章"场景样例+护栏前置"的任务分工思路）
 - Agent 之间用结构化 JSON 传递结果，而不是把上一个 Agent 的自然语言输出直接糊给下一个
 - LLM 调用统一走 OpenAI 协议兼容客户端，方便切换 DeepSeek/混元等任意服务商
 """

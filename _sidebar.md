@@ -9,32 +9,33 @@
 
 - [**Part 2 · 亲手造轮子**](docs/part2/README.md)
   - [05 三大经典范式手把手实现](docs/part2/05-三大经典范式手把手实现.md)
-  - [06 低代码平台怎么选](docs/part2/06-低代码平台怎么选.md)
-  - [07 主流框架产品化评测](docs/part2/07-主流框架产品化评测.md)
-  - [08 从零写一个Agent框架](docs/part2/08-从零写一个Agent框架.md)
+  - [06 Vibecoding方法论](docs/part2/06-Vibecoding方法论.md) 🆕
+  - [07 低代码平台怎么选](docs/part2/07-低代码平台怎么选.md)
+  - [08 主流框架产品化评测](docs/part2/08-主流框架产品化评测.md)
+  - [09 从零写一个Agent框架](docs/part2/09-从零写一个Agent框架.md)
 
 - [**Part 3 · 高级能力**](docs/part3/README.md)
-  - [09 记忆与检索](docs/part3/09-记忆与检索.md)
-  - [10 上下文工程](docs/part3/10-上下文工程.md)
-  - [11 通信协议速查](docs/part3/11-通信协议速查.md)
-  - [12 Agentic RL产品经理版](docs/part3/12-Agentic-RL产品经理版.md)
-  - [13 Agent评估体系与常见陷阱](docs/part3/13-Agent评估体系与常见陷阱.md)
-  - [14 Agent安全与风险治理](docs/part3/14-Agent安全与风险治理.md)
+  - [10 记忆与检索](docs/part3/10-记忆与检索.md)
+  - [11 上下文工程](docs/part3/11-上下文工程.md)
+  - [12 通信协议速查](docs/part3/12-通信协议速查.md)
+  - [13 Agentic RL产品经理版](docs/part3/13-Agentic-RL产品经理版.md)
+  - [14 Agent评估体系与常见陷阱](docs/part3/14-Agent评估体系与常见陷阱.md)
+  - [15 Agent安全与风险治理](docs/part3/15-Agent安全与风险治理.md)
 
 - [**Part 4 · 真实项目复盘**](docs/part4/README.md) ✅免费
-  - [15 企业IM机器人](docs/part4/15-企业IM智能问答机器人.md)
-  - [16 数据分析Agent架构演进](docs/part4/16-数据分析Agent架构演进.md)
-  - [17 独立开发者一周产品](docs/part4/17-独立开发者一周产品.md)
+  - [16 企业IM机器人](docs/part4/16-企业IM智能问答机器人.md)
+  - [17 数据分析Agent架构演进](docs/part4/17-数据分析Agent架构演进.md)
+  - [18 独立开发者一周产品](docs/part4/18-独立开发者一周产品.md)
 
 - [**Part 5 · 毕业设计与展望**](docs/part5/README.md)
-  - [18 毕业设计Pitch+Capstone](docs/part5/18-毕业设计Pitch.md)
-  - [19 转型面试题库](docs/part5/19-转型面试题库.md)
+  - [19 毕业设计Pitch+Capstone](docs/part5/19-毕业设计Pitch.md)
+  - [20 转型面试题库](docs/part5/20-转型面试题库.md)
 
 - [**Part 6 · 产品化跃升**](docs/part6/README.md) 🆕
-  - [20 多模态Agent专题](docs/part6/20-多模态Agent专题.md)
-  - [21 Agent产品AB测试方法论](docs/part6/21-Agent产品AB测试方法论.md)
-  - [22 Agent产品商业化与定价模式](docs/part6/22-Agent产品商业化与定价模式.md)
-  - [23 团队协作与项目管理](docs/part6/23-团队协作与项目管理.md)
+  - [21 多模态Agent专题](docs/part6/21-多模态Agent专题.md)
+  - [22 Agent产品AB测试方法论](docs/part6/22-Agent产品AB测试方法论.md)
+  - [23 Agent产品商业化与定价模式](docs/part6/23-Agent产品商业化与定价模式.md)
+  - [24 团队协作与项目管理](docs/part6/24-团队协作与项目管理.md)
 
 - **番外篇 · 手把手实战** 🆕
   - [番外01 Coze保姆级实战教程](docs/bonus/番外01-Coze保姆级实战教程.md)

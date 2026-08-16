@@ -19,11 +19,11 @@
 
 ## 全部内容，100% 免费开源
 
-我一直的产品哲学是"先把最核心、最能建立信任的部分完全开源免费"——这套课延续这个哲学，**前言 + Part 1~6 全部 23 章 + Part 4 三个真实项目复盘 + 6 个可运行 demo + 每章末尾5道单选自测题，全部公开、永久免费**，没有付费墙、没有解锁流程。
+我一直的产品哲学是"先把最核心、最能建立信任的部分完全开源免费"——这套课延续这个哲学，**前言 + Part 1~6 全部 24 章 + Part 4 三个真实项目复盘 + 9 个可运行 demo + 每章末尾5道单选自测题，全部公开、永久免费**，没有付费墙、没有解锁流程。
 
 | | 内容 | 状态 |
 |---|---|---|
-| **认知与方法论** | 前言 + Part 1 认知重建（4章）+ Part 2 亲手造轮子（4章）+ Part 3 高级能力（6章，含新增Agent安全与风险治理） | ✅ 本仓库完全公开 |
+| **认知与方法论** | 前言 + Part 1 认知重建（4章）+ Part 2 亲手造轮子（5章，含新增Vibecoding方法论）+ Part 3 高级能力（6章，含新增Agent安全与风险治理） | ✅ 本仓库完全公开 |
 | **真实项目复盘** | Part 4 · 真实项目复盘（3 个我亲手做上线过的真实 Agent 项目：企业 IM 机器人 / 数据分析 Agent 架构演进 / 独立开发者一周产品） | ✅ 本仓库完全公开 |
 | **毕业设计与展望** | Part 5 · 毕业设计 Pitch + 多智能体协作Capstone + 转型面试题库（2章） | ✅ 本仓库完全公开 |
 | **产品化跃升** | Part 6 · 多模态Agent专题 + AB测试方法论 + 商业化定价 + 团队协作与项目管理（4章） | ✅ 本仓库完全公开 |
@@ -57,38 +57,39 @@
 ### Part 2 ·亲手造轮子——从 Prompt 到框架 ✅ 免费
 - [Part 2 导读](./docs/part2/README.md)
 - [05 三大经典范式手把手实现（ReAct/Plan-and-Solve/Reflection）](./docs/part2/05-三大经典范式手把手实现.md)
-- [06 低代码平台怎么选（Dify/Coze/n8n）](./docs/part2/06-低代码平台怎么选.md)
-- [07 主流框架产品化评测（LangGraph/AutoGen/AgentScope）](./docs/part2/07-主流框架产品化评测.md)
-- [08 从零写一个 <300 行的 Agent 框架](./docs/part2/08-从零写一个Agent框架.md)
+- [06 Vibecoding方法论：怎么用AI编程工具搭Agent产品](./docs/part2/06-Vibecoding方法论.md)
+- [07 低代码平台怎么选（Dify/Coze/n8n）](./docs/part2/07-低代码平台怎么选.md)
+- [08 主流框架产品化评测（LangGraph/AutoGen/AgentScope）](./docs/part2/08-主流框架产品化评测.md)
+- [09 从零写一个 <300 行的 Agent 框架](./docs/part2/09-从零写一个Agent框架.md)
 
 ### Part 3 · 让Agent 活起来——高级能力 ✅ 免费
 - [Part 3 导读](./docs/part3/README.md)
-- [09 记忆与检索](./docs/part3/09-记忆与检索.md)
-- [10 上下文工程](./docs/part3/10-上下文工程.md)
-- [11 通信协议速查（MCP/A2A/ANP）](./docs/part3/11-通信协议速查.md)
-- [12 Agentic RL 产品经理版](./docs/part3/12-Agentic-RL产品经理版.md)
-- [13 Agent 评估体系与常见陷阱](./docs/part3/13-Agent评估体系与常见陷阱.md)
-- [14 Agent 安全与风险治理](./docs/part3/14-Agent安全与风险治理.md)
+- [10 记忆与检索](./docs/part3/10-记忆与检索.md)
+- [11 上下文工程](./docs/part3/11-上下文工程.md)
+- [12 通信协议速查（MCP/A2A/ANP）](./docs/part3/12-通信协议速查.md)
+- [13 Agentic RL 产品经理版](./docs/part3/13-Agentic-RL产品经理版.md)
+- [14 Agent 评估体系与常见陷阱](./docs/part3/14-Agent评估体系与常见陷阱.md)
+- [15 Agent 安全与风险治理](./docs/part3/15-Agent安全与风险治理.md)
 
 ### Part 4 · 从Demo 到产品——真实项目复盘 ✅ 免费（三章已全部完稿）
 - [Part 4 导读](./docs/part4/README.md)
-- [15 案例一：企业IM智能问答机器人](./docs/part4/15-企业IM智能问答机器人.md)
-- [16 案例二：数据分析Agent架构演进](./docs/part4/16-数据分析Agent架构演进.md)
-- [17 案例三：独立开发者一周产品](./docs/part4/17-独立开发者一周产品.md)
+- [16 案例一：企业IM智能问答机器人](./docs/part4/16-企业IM智能问答机器人.md)
+- [17 案例二：数据分析Agent架构演进](./docs/part4/17-数据分析Agent架构演进.md)
+- [18 案例三：独立开发者一周产品](./docs/part4/18-独立开发者一周产品.md)
 
 ### Part 5 · 毕业设计与展望 ✅ 免费
 - [Part 5 导读](./docs/part5/README.md)
-- [18 毕业设计：你的 Agent 产品 Pitch + 多智能体协作Capstone](./docs/part5/18-毕业设计Pitch.md)
-- [19 转型面试题库（AI 产品经理 / Agent 工程师）](./docs/part5/19-转型面试题库.md)
+- [19 毕业设计：你的 Agent 产品 Pitch + 多智能体协作Capstone](./docs/part5/19-毕业设计Pitch.md)
+- [20 转型面试题库（AI 产品经理 / Agent 工程师）](./docs/part5/20-转型面试题库.md)
 
 ### Part 6 · 产品化跃升——从能跑到能规模化 ✅ 免费
 - [Part 6 导读](./docs/part6/README.md)
-- [20 多模态 Agent 专题：语音/图片/视觉场景的产品设计](./docs/part6/20-多模态Agent专题.md)
-- [21 Agent 产品的 AB 测试方法论](./docs/part6/21-Agent产品AB测试方法论.md)
-- [22 Agent 产品商业化与定价模式](./docs/part6/22-Agent产品商业化与定价模式.md)
-- [23 团队协作与项目管理：怎么带团队把 Agent 项目做成](./docs/part6/23-团队协作与项目管理.md)
+- [21 多模态 Agent 专题：语音/图片/视觉场景的产品设计](./docs/part6/21-多模态Agent专题.md)
+- [22 Agent 产品的 AB 测试方法论](./docs/part6/22-Agent产品AB测试方法论.md)
+- [23 Agent 产品商业化与定价模式](./docs/part6/23-Agent产品商业化与定价模式.md)
+- [24 团队协作与项目管理：怎么带团队把 Agent 项目做成](./docs/part6/24-团队协作与项目管理.md)
 
-### 番外篇 · 手把手实战教程 🆕（持续更新，不计入主线23章）
+### 番外篇 · 手把手实战教程 🆕（持续更新，不计入主线24章）
 - [番外01 零代码实战：用 Coze 从0到1搭一个「AI产品经理面试陪练」Bot（保姆级教程，配截图占位）](./docs/bonus/番外01-Coze保姆级实战教程.md)
 - [番外02 全栈实战：从0搭一个「个人品牌定位 Agent」（前端+后端+多智能体协作）](./docs/bonus/番外02-个人品牌定位Agent全栈实战.md)
 - [番外03 零基础保姆级：从0搭一个MCP服务器，并接入真实客户端](./docs/bonus/番外03-MCP服务器从零搭建保姆级教程.md)
@@ -113,7 +114,7 @@
 
 ## 📥 下载完整版 PDF
 
-不想在线读？可以下载完整 PDF 离线看（含封面+目录+全部6个Part 23章正文，共202页）：
+不想在线读？可以下载完整 PDF 离线看（含封面+目录+全部6个Part 24章正文，共202页）：
 
 **[⬇️ 点击下载 Harry的Agent实战课-完整版.pdf](https://harryjzhang69-web.github.io/harry-agent-course/downloads/Harry%E7%9A%84Agent%E5%AE%9E%E6%88%98%E8%AF%BE-%E5%AE%8C%E6%95%B4%E7%89%88.pdf)**
 

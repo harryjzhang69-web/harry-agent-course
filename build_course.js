@@ -1,6 +1,6 @@
 /*
  * build_course.js
- * 把 docs/ 下的 19 章 markdown 解析成结构化课件数据层 app/course.json
+ * 把 docs/ 下的 24 章 markdown 解析成结构化课件数据层 app/course.json
  * - 拆分知识卡片（按 H2 小节，排除章节自测）
  * - 提取自测题（题干 + 选项 + 答案）
  * 供「学习机 Web App」和「讲课 PPT」共同复用。
@@ -23,31 +23,31 @@ const PARTS = [
     id: 'part2', title: 'Part 2 · 亲手造轮子',
     tagline: '从 Prompt 到框架，判断要不要自己写',
     cover: '../assets/images/part2-cover.png',
-    chapters: ['05-三大经典范式手把手实现', '06-低代码平台怎么选', '07-主流框架产品化评测', '08-从零写一个Agent框架'],
+    chapters: ['05-三大经典范式手把手实现', '06-Vibecoding方法论', '07-低代码平台怎么选', '08-主流框架产品化评测', '09-从零写一个Agent框架'],
   },
   {
     id: 'part3', title: 'Part 3 · 高级能力',
     tagline: '让 Agent 从能跑 Demo 到生产可靠',
     cover: '../assets/images/part3-cover.png',
-    chapters: ['09-记忆与检索', '10-上下文工程', '11-通信协议速查', '12-Agentic-RL产品经理版', '13-Agent评估体系与常见陷阱', '14-Agent安全与风险治理'],
+    chapters: ['10-记忆与检索', '11-上下文工程', '12-通信协议速查', '13-Agentic-RL产品经理版', '14-Agent评估体系与常见陷阱', '15-Agent安全与风险治理'],
   },
   {
     id: 'part4', title: 'Part 4 · 真实项目复盘',
     tagline: '三个我亲手上线过的真实 Agent 项目',
     cover: '../assets/images/part4-cover.png',
-    chapters: ['15-企业IM智能问答机器人', '16-数据分析Agent架构演进', '17-独立开发者一周产品'],
+    chapters: ['16-企业IM智能问答机器人', '17-数据分析Agent架构演进', '18-独立开发者一周产品'],
   },
   {
     id: 'part5', title: 'Part 5 · 毕业设计与展望',
     tagline: '把方法论串成产品 Pitch，检验知识体系',
     cover: '../assets/images/part5-cover.png',
-    chapters: ['18-毕业设计Pitch', '19-转型面试题库'],
+    chapters: ['19-毕业设计Pitch', '20-转型面试题库'],
   },
   {
     id: 'part6', title: 'Part 6 · 产品化跃升',
     tagline: '多模态、AB测试、商业化、团队协作——从能跑到能规模化',
     cover: '../assets/images/part6-cover.png',
-    chapters: ['20-多模态Agent专题', '21-Agent产品AB测试方法论', '22-Agent产品商业化与定价模式', '23-团队协作与项目管理'],
+    chapters: ['21-多模态Agent专题', '22-Agent产品AB测试方法论', '23-Agent产品商业化与定价模式', '24-团队协作与项目管理'],
   },
 ];
 

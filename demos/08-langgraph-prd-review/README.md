@@ -1,6 +1,6 @@
 # Demo 08：用 LangGraph 真实框架实现「PRD 自动生成与多角色评审」
 
-> 对应课程 [Part2 第07章 主流框架产品化评测](../../docs/part2/07-主流框架产品化评测.md)。07章只做了 LangGraph / AutoGen / AgentScope 的纯文字对比评测，这个 demo 是**唯一一个真实调用框架 SDK（`langgraph`）跑起来的可运行代码**，不是自己拿 OpenAI SDK 手写模拟。
+> 对应课程 [Part2 第08章 主流框架产品化评测](../../docs/part2/08-主流框架产品化评测.md)。08章只做了 LangGraph / AutoGen / AgentScope 的纯文字对比评测，这个 demo 是**唯一一个真实调用框架 SDK（`langgraph`）跑起来的可运行代码**，不是自己拿 OpenAI SDK 手写模拟。
 
 ## 这个 Demo 演示了什么
 
@@ -76,4 +76,4 @@ DEMO_SELFTEST=1 python prd_review_graph.py
 
 ## 毕业作业提示
 
-跑通之后，回到 [Part2 第07章](../../docs/part2/07-主流框架产品化评测.md) 的选型清单部分，尝试回答：**如果把"架构师评估"这条分支去掉，只保留"通过/小修"二元判决，这个场景还值得用 LangGraph 吗？还是退化成 Demo06 的纯手写方案更合适？**
+跑通之后，回到 [Part2 第08章](../../docs/part2/08-主流框架产品化评测.md) 的选型清单部分，尝试回答：**如果把"架构师评估"这条分支去掉，只保留"通过/小修"二元判决，这个场景还值得用 LangGraph 吗？还是退化成 Demo06 的纯手写方案更合适？**

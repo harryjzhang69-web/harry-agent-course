@@ -1,6 +1,6 @@
 # 番外 02　全栈实战：从0搭一个「个人品牌定位 Agent」（前端+后端+多智能体协作）
 
-> 本篇属于「番外篇」，不计入主线 6 个 Part / 23 章的编号体系。这是全课程**第一个可以 clone 下来直接跑起来的完整 Web 应用**——之前的 6 个 demo（demos/01~06）都是命令行级别的最小示例，这一篇是前端+后端+多智能体协作的完整产品形态，对应课程配套代码 [`demos/07-personal-brand-agent`](https://github.com/harryjzhang69-web/harry-agent-course/tree/main/demos/07-personal-brand-agent)。
+> 本篇属于「番外篇」，不计入主线 6 个 Part / 24 章的编号体系。这是全课程**第一个可以 clone 下来直接跑起来的完整 Web 应用**——之前的 6 个 demo（demos/01~06）都是命令行级别的最小示例，这一篇是前端+后端+多智能体协作的完整产品形态，对应课程配套代码 [`demos/07-personal-brand-agent`](https://github.com/harryjzhang69-web/harry-agent-course/tree/main/demos/07-personal-brand-agent)。
 
 ## 为什么要做这个、为什么选这个场景
 

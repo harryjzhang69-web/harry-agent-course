@@ -5,6 +5,41 @@
     "code": "graph LR\r\n    A[核心认知<br/>这一章到底在讲什么] --> B[决策框架<br/>给你一套可复用的判断工具]\r\n    B --> C[可运行 Demo<br/>能跑起来的最小实现]\r\n    C --> D[产品经理清单<br/>用这章的知识做一次真实判断]\r\n"
   },
   {
+    "file": "docs/bonus/番外01-Coze保姆级实战教程.md",
+    "idx": 1,
+    "code": "flowchart LR\r\n    A[\"① 注册 & 创建 Bot\"] --> B[\"② 写人设与回复逻辑<br/>（Prompt）\"]\r\n    B --> C[\"③ 挂载知识库<br/>（面试题库）\"]\r\n    C --> D[\"④ 可选：加工作流节点<br/>（追问式训练）\"]\r\n    D --> E[\"⑤ 调试预览<br/>（3类必测Case）\"]\r\n    E --> F[\"⑥ 发布上线<br/>（选渠道）\"]\r\n"
+  },
+  {
+    "file": "docs/bonus/番外01-Coze保姆级实战教程.md",
+    "idx": 2,
+    "code": "flowchart TD\r\n    S[用户提交回答] --> J{回答字数是否<br/>少于20字?}\r\n    J --回答太简单--> P1[追问：能展开讲讲<br/>具体的判断过程吗?]\r\n    J --回答完整--> L[大模型打分+点评]\r\n    L --> Q{是否偏离框架<br/>只谈概念无案例?}\r\n    Q --是--> P2[提醒：面试官想听<br/>判断框架，不是背答案]\r\n    Q --否--> N[给出深挖追问题]\r\n"
+  },
+  {
+    "file": "docs/bonus/番外02-个人品牌定位Agent全栈实战.md",
+    "idx": 1,
+    "code": "flowchart TB\r\n    subgraph 前端[\"前端（纯静态 HTML/CSS/JS，无需构建工具）\"]\r\n        F1[index.html 表单]\r\n        F2[app.js 消费SSE流]\r\n    end\r\n    subgraph 后端[\"后端（FastAPI）\"]\r\n        A1[POST /api/generate]\r\n        A2[\"Orchestrator 协调者\"]\r\n        A3[\"①定位分析师\"]\r\n        A4[\"②内容策略师\"]\r\n        A5[\"③文案专家\"]\r\n        A6[\"④整合编辑\"]\r\n    end\r\n    F1 -->|提交表单JSON| A1\r\n    A1 --> A2\r\n    A2 --> A3 --> A4 --> A5 --> A6\r\n    A2 -.SSE实时进度.-> F2\r\n    A6 -.最终报告JSON.-> F2\r\n"
+  },
+  {
+    "file": "docs/bonus/番外02-个人品牌定位Agent全栈实战.md",
+    "idx": 2,
+    "code": "flowchart LR\r\n    U[用户填表] --> P[\"①定位分析师<br/>找差异化角度\"]\r\n    P --> C[\"②内容策略师<br/>排内容支柱+首月日历\"]\r\n    C --> W[\"③文案专家<br/>生成简介/首发文案\"]\r\n    W --> E[\"④整合编辑<br/>汇总成完整报告\"]\r\n"
+  },
+  {
+    "file": "docs/bonus/番外03-MCP服务器从零搭建保姆级教程.md",
+    "idx": 1,
+    "code": "flowchart LR\r\n    subgraph 客户端侧\r\n        Claude[Claude Desktop] \r\n        Cursor[Cursor]\r\n        MyAgent[你自己写的Agent]\r\n    end\r\n    subgraph MCP协议层\r\n        Server[\"MCP服务器<br/>(server.py)\"]\r\n    end\r\n    subgraph 数据层\r\n        Data[\"题库数据<br/>(15道面试题)\"]\r\n    end\r\n    Claude -- MCP协议 --> Server\r\n    Cursor -- MCP协议 --> Server\r\n    MyAgent -- MCP协议 --> Server\r\n    Server --> Data\r\n    style Server fill:#5b6cf5,color:#fff\r\n"
+  },
+  {
+    "file": "docs/bonus/番外04-四个前沿科普.md",
+    "idx": 1,
+    "code": "flowchart LR\r\n    A[\"① 内建上下文闭环<br/>(轻量易审计)\"] --> B[\"② 技能资产化闭环\"]\r\n    B --> C[\"③ 群体智能闭环\"]\r\n    C --> D[\"④ 参数/代码自修改闭环<br/>(最强也最重)\"]\r\n    style A fill:#c8e6c9\r\n    style D fill:#ffcdd2\r\n"
+  },
+  {
+    "file": "docs/bonus/番外04-四个前沿科普.md",
+    "idx": 2,
+    "code": "flowchart TD\r\n    subgraph 连接与知识层\r\n        MCP[MCP: 怎么连上工具/数据]\r\n        Skills[Agent Skills: 怎么用好这些工具]\r\n    end\r\n    subgraph 行动表面层\r\n        GUI[GUI Agent: 操作电脑/手机界面]\r\n        Web[Web Agent: 操作浏览器网页]\r\n    end\r\n    subgraph 持续成长层\r\n        Evo[Agent自进化: 从经验里持续变强]\r\n    end\r\n    MCP --> Skills\r\n    GUI -.同属操作类范式.- Web\r\n    Skills --> Evo\r\n    Web --> Evo\r\n    style Skills fill:#5b6cf5,color:#fff\r\n"
+  },
+  {
     "file": "docs/part1/01-Agent不是新物种.md",
     "idx": 1,
     "code": "graph LR\r\n    P[感知 Perceive<br/>拿到环境/用户的信息] --> D[决策 Decide<br/>想清楚下一步该做什么]\r\n    D --> A[行动 Act<br/>调用工具/输出结果，改变环境]\r\n    A --> P\r\n"
@@ -45,128 +80,188 @@
     "code": "flowchart TD\r\n    Start[你的任务] --> Q1{任务路径是否<br/>需要根据中间结果<br/>动态调整?}\r\n    Q1 --是--> ReAct[优先 ReAct]\r\n    Q1 --否，路径基本固定--> Q2{任务是否<br/>需要多个步骤<br/>且步骤间有全局依赖?}\r\n    Q2 --是--> PS[优先 Plan-and-Solve]\r\n    Q2 --否，单步任务--> Q3{输出质量要求<br/>是否很高<br/>容错率很低?}\r\n    Q3 --是--> Reflect[叠加 Reflection<br/>做质量把关]\r\n    Q3 --否--> Simple[单轮工具调用就够了<br/>不需要任何范式]\r\n"
   },
   {
-    "file": "docs/part2/06-低代码平台怎么选.md",
+    "file": "docs/part2/06-Vibecoding方法论.md",
+    "idx": 1,
+    "code": "flowchart LR\r\n    You[\"你：讲清楚意图<br/>+设定边界+定义验收标准\"] --> AI[\"AI：生成代码草稿<br/>+快速迭代\"]\r\n    AI --> Review[\"你：审查<br/>+跑起来验证<br/>+挑漏洞\"]\r\n    Review -->|有问题| Fix[\"精确指出问题<br/>让AI改一处\"]\r\n    Fix --> AI\r\n    Review -->|通过| Done[\"合入/上线\"]\r\n"
+  },
+  {
+    "file": "docs/part2/06-Vibecoding方法论.md",
+    "idx": 2,
+    "code": "flowchart TD\r\n    Start[准备用AI写一段Agent代码] --> Q1{这段代码的正确性<br/>能靠跑测试用例<br/>完全验证吗?}\r\n    Q1 --能--> Vibe[放心Vibecoding<br/>+跑测试用例验证]\r\n    Q1 --不能，比如涉及安全/<br/>成本控制/并发这类<br/>非功能性要求--> Q2{你自己懂不懂<br/>这类问题该看什么?}\r\n    Q2 --懂，知道该往哪审查--> Vibe2[Vibecoding<br/>+针对性人工审查]\r\n    Q2 --不懂，连该看哪都不知道--> Learn[先补一点原理<br/>知道\"该往哪个方向审查\"<br/>再回来Vibecoding]\r\n"
+  },
+  {
+    "file": "docs/part2/07-低代码平台怎么选.md",
     "idx": 1,
     "code": "flowchart TD\r\n    Start[新Agent需求] --> Q1{团队里有没有<br/>工程师资源?}\r\n    Q1 --没有--> LowCode[优先低代码平台<br/>业务人员也能维护]\r\n    Q1 --有--> Q2{核心逻辑未来会不会<br/>被多个不同入口复用?<br/>如企微+网页+API}\r\n    Q2 --会--> Custom[自建服务，<br/>业务逻辑独立于任何单一平台]\r\n    Q2 --不会，单一入口--> Q3{预计流程复杂度<br/>会超过10个节点<br/>或涉及复杂条件分支吗?}\r\n    Q3 --会--> Q4{团队能接受<br/>较高的调试成本吗?}\r\n    Q4 --能接受--> LowCode2[低代码平台起步<br/>做好「未来可能要重构」的预期]\r\n    Q4 --不能接受--> Custom\r\n    Q3 --不会，简单流程--> LowCode3[低代码平台，<br/>性价比最高的选择]\r\n"
   },
   {
-    "file": "docs/part2/07-主流框架产品化评测.md",
+    "file": "docs/part2/08-主流框架产品化评测.md",
     "idx": 1,
     "code": "flowchart TD\r\n    Start[决定自己写代码] --> Q1{任务是单Agent<br/>还是多Agent协作?}\r\n    Q1 --单Agent，流程复杂需要精确控制--> LG[LangGraph]\r\n    Q1 --多Agent协作，心智模型偏「角色对话」--> AG[AutoGen]\r\n    Q1 --多Agent+企业级生产部署要求高--> AS[AgentScope]\r\n    Q1 --其实任务很简单--> Mini[不需要任何框架<br/>见下一章:从零写<300行]\r\n"
   },
   {
-    "file": "docs/part2/08-从零写一个Agent框架.md",
+    "file": "docs/part2/09-从零写一个Agent框架.md",
     "idx": 1,
     "code": "classDiagram\r\n    class Tool {\r\n        +name: str\r\n        +description: str\r\n        +func: Callable\r\n        +call(input: str) str\r\n    }\r\n    class Memory {\r\n        +messages: list\r\n        +add(role, content)\r\n        +get_context()\r\n    }\r\n    class Agent {\r\n        +tools: dict~str,Tool~\r\n        +memory: Memory\r\n        +llm_client\r\n        +register_tool(tool)\r\n        +run(user_input) str\r\n    }\r\n    Agent --> Tool\r\n    Agent --> Memory\r\n"
   },
   {
-    "file": "docs/part3/09-记忆与检索.md",
+    "file": "docs/part3/10-记忆与检索.md",
     "idx": 1,
     "code": "graph TD\r\n    subgraph 短期记忆\r\n        A[当前对话的滑动窗口<br/>最近N轮消息]\r\n    end\r\n    subgraph 长期记忆\r\n        B[结构化存储<br/>用户画像/关键事实/历史决策]\r\n        C[向量检索库<br/>Embedding+相似度召回]\r\n    end\r\n    Query[当前用户输入] --> A\r\n    Query --> Retrieval[检索环节]\r\n    Retrieval --> B\r\n    Retrieval --> C\r\n    A --> Context[组装进本次Prompt的上下文]\r\n    B --> Context\r\n    C --> Context\r\n"
   },
   {
-    "file": "docs/part3/09-记忆与检索.md",
+    "file": "docs/part3/10-记忆与检索.md",
     "idx": 2,
     "code": "sequenceDiagram\r\n    participant U as 用户提问\r\n    participant E as Embedding模型\r\n    participant V as 向量库\r\n    participant L as LLM\r\n    U->>E: 把问题转成向量\r\n    E->>V: 用向量去检索最相似的历史片段\r\n    V->>L: 把Top-K相关片段拼进Prompt\r\n    U->>L: 连同原问题一起发给模型\r\n    L->>U: 基于检索到的真实内容生成回答\r\n"
   },
   {
-    "file": "docs/part3/09-记忆与检索.md",
+    "file": "docs/part3/10-记忆与检索.md",
     "idx": 3,
     "code": "flowchart TD\r\n    Start[需要引入外部知识?] --> Q1{知识量能不能<br/>完整塞进一次上下文?<br/>比如几千字的FAQ}\r\n    Q1 --能--> Simple[直接全量拼进Prompt<br/>不需要RAG]\r\n    Q1 --不能，知识库很大--> Q2{查询模式是<br/>精确匹配还是<br/>语义模糊匹配?}\r\n    Q2 --精确匹配，比如按ID/关键词--> DB[结构化数据库查询<br/>更快更准，不需要向量检索]\r\n    Q2 --语义模糊匹配--> Q3{对检索精度的<br/>容错率高不高?}\r\n    Q3 --容错率低，检索错了后果严重--> Hybrid[向量检索+规则过滤<br/>+结果校验的混合方案]\r\n    Q3 --容错率还可以--> RAG[标准RAG方案]\r\n"
   },
   {
-    "file": "docs/part3/10-上下文工程.md",
+    "file": "docs/part3/11-上下文工程.md",
     "idx": 1,
     "code": "graph TD\r\n    Ctx[本次调用的完整上下文] --> Sys[System Prompt<br/>角色设定+工具说明+输出格式约束]\r\n    Ctx --> Mem[短期记忆<br/>最近几轮对话历史]\r\n    Ctx --> Ret[检索结果<br/>RAG召回的相关片段]\r\n    Ctx --> Tool[工具返回结果<br/>Observation]\r\n    Ctx --> Cur[当前用户输入]\r\n"
   },
   {
-    "file": "docs/part3/10-上下文工程.md",
+    "file": "docs/part3/11-上下文工程.md",
     "idx": 2,
     "code": "graph LR\r\n    Budget[总Token预算] --> P1[P0: System Prompt+当前问题<br/>必须完整保留,固定占用]\r\n    Budget --> P2[P1: 最相关的检索结果<br/>Top-K,严格限制条数]\r\n    Budget --> P3[P2: 最近几轮对话<br/>滑动窗口,超出摘要化]\r\n    Budget --> P4[P3: 更早的历史/低相关检索<br/>优先被裁剪的部分]\r\n"
   },
   {
-    "file": "docs/part3/11-通信协议速查.md",
+    "file": "docs/part3/12-通信协议速查.md",
     "idx": 1,
     "code": "graph TD\r\n    subgraph MCP:Agent怎么用工具和数据\r\n        A1[Agent] -->|标准化协议| A2[工具/数据源A]\r\n        A1 -->|标准化协议| A3[工具/数据源B]\r\n    end\r\n    subgraph A2A:Agent怎么和别的Agent协作\r\n        B1[Agent甲 厂商A] <-->|标准化协议| B2[Agent乙 厂商B]\r\n    end\r\n    subgraph ANP:Agent怎么在开放网络里被发现和调用\r\n        C1[Agent] -->|注册/发现机制| C2[开放的Agent网络]\r\n    end\r\n"
   },
   {
-    "file": "docs/part3/12-Agentic-RL产品经理版.md",
+    "file": "docs/part3/13-Agentic-RL产品经理版.md",
     "idx": 1,
     "code": "graph LR\r\n    A[Prompt工程<br/>成本:分钟级] --> B[工具/知识库优化<br/>成本:天级]\r\n    B --> C[微调 SFT<br/>成本:周级,需要标注数据]\r\n    C --> D[强化学习 RL训练<br/>成本:月级,需要奖励设计+大量计算资源]\r\n"
   },
   {
-    "file": "docs/part3/12-Agentic-RL产品经理版.md",
+    "file": "docs/part3/13-Agentic-RL产品经理版.md",
     "idx": 2,
     "code": "flowchart LR\r\n    Base[基础大模型] --> SFT[SFT阶段<br/>用标注数据教会基本任务格式/风格]\r\n    SFT --> Gen[让模型对同一问题<br/>生成多个候选答案]\r\n    Gen --> Reward[用奖励函数/模型<br/>给每个候选打分]\r\n    Reward --> GRPO[GRPO:组内相对比较<br/>调整模型倾向于高分策略]\r\n    GRPO --> Eval{评估是否达标?}\r\n    Eval --否--> Gen\r\n    Eval --是--> Deploy[部署上线]\r\n"
   },
   {
-    "file": "docs/part3/12-Agentic-RL产品经理版.md",
+    "file": "docs/part3/13-Agentic-RL产品经理版.md",
     "idx": 3,
     "code": "flowchart TD\r\n    Start[Agent能力不达标] --> Q1{是Prompt/工具设计的问题<br/>还是模型能力本身的局限?}\r\n    Q1 --Prompt/工具问题--> Fix1[优化Prompt/工具描述<br/>不需要训练]\r\n    Q1 --模型能力局限--> Q2{问题是格式/风格/<br/>特定知识不足?}\r\n    Q2 --是--> SFTPath[考虑SFT<br/>先评估标注数据的可获得性]\r\n    Q2 --否，是多步决策策略不够优--> Q3{有没有明确、<br/>可自动计算的<br/>奖励信号?}\r\n    Q3 --有--> RLPath[考虑RL/GRPO训练]\r\n    Q3 --没有，奖励很难量化--> Rethink[重新设计任务目标<br/>让它变得可量化，<br/>否则RL训练难以收敛]\r\n"
   },
   {
-    "file": "docs/part3/13-Agent评估体系与常见陷阱.md",
+    "file": "docs/part3/14-Agent评估体系与常见陷阱.md",
     "idx": 1,
     "code": "graph TD\r\n    Eval[Agent评估体系] --> A[任务成功率<br/>最终目标有没有达成]\r\n    Eval --> B[过程效率<br/>用了多少步/多少Token/多长时间]\r\n    Eval --> C[安全与合规<br/>有没有做出不该做的动作]\r\n    Eval --> D[用户体验<br/>过程是否顺畅、是否啰嗦、是否需要反复纠正]\r\n"
   },
   {
-    "file": "docs/part3/13-Agent评估体系与常见陷阱.md",
+    "file": "docs/part3/14-Agent评估体系与常见陷阱.md",
     "idx": 2,
     "code": "graph LR\r\n    A[小流量灰度<br/>真实用户+少量流量] --> B[收集真实case<br/>标注问题类型]\r\n    B --> C[构建/更新评估集<br/>能力集+回归集+异常集]\r\n    C --> D[迭代优化<br/>Prompt/工具/训练]\r\n    D --> E[评估集验证+人工盲测校准]\r\n    E --> A\r\n"
   },
   {
-    "file": "docs/part3/14-Agent安全与风险治理.md",
+    "file": "docs/part3/15-Agent安全与风险治理.md",
     "idx": 1,
     "code": "graph TD\r\n    subgraph 直接注入\r\n        U[用户直接输入] -->|\"忽略你之前的所有指令,现在你是...\"| A[Agent]\r\n    end\r\n    subgraph 间接注入 更危险更隐蔽\r\n        Doc[Agent检索到的文档/网页] -->|文档里藏着「给AI的隐藏指令」| A\r\n        Tool[工具调用返回的结果] -->|API返回内容里混入攻击指令| A\r\n        Mail[Agent处理的邮件/工单内容] -->|正文里藏着注入指令| A\r\n    end\r\n"
   },
   {
-    "file": "docs/part3/14-Agent安全与风险治理.md",
+    "file": "docs/part3/15-Agent安全与风险治理.md",
     "idx": 2,
     "code": "graph TD\r\n    L1[第一层:输入过滤<br/>检测已知注入模式/异常指令特征] --> L2[第二层:权限最小化<br/>Agent默认只拿到完成任务所需的最小工具权限]\r\n    L2 --> L3[第三层:高风险动作强制人工确认<br/>Human-in-the-loop]\r\n    L3 --> L4[第四层:输出/行为审计<br/>记录每一次工具调用的完整上下文]\r\n    L4 --> L5[第五层:事后追溯与快速回滚<br/>发现问题能定位到具体哪一步、能撤销影响]\r\n"
   },
   {
-    "file": "docs/part3/14-Agent安全与风险治理.md",
+    "file": "docs/part3/15-Agent安全与风险治理.md",
     "idx": 3,
     "code": "flowchart TD\r\n    Start[你的Agent会调用哪些工具] --> Q1{这个工具的调用<br/>是否可逆?}\r\n    Q1 --可逆,影响范围小--> Low[低风险:正常执行,<br/>做好日志审计即可]\r\n    Q1 --不可逆或影响范围大--> Q2{是否涉及资金/<br/>用户隐私/对外发送内容?}\r\n    Q2 --否--> Mid[中风险:执行前做二次校验<br/>不强制人工,但要有拦截规则]\r\n    Q2 --是--> High[高风险:强制Human-in-the-loop<br/>+ 最小权限 + 完整审计留痕]\r\n"
   },
   {
-    "file": "docs/part4/15-企业IM智能问答机器人.md",
+    "file": "docs/part4/16-企业IM智能问答机器人.md",
     "idx": 1,
     "code": "flowchart LR\r\n    Start[开始] --> LLM2[LLM2<br/>问题分类+提取参数]\r\n    LLM2 --> Code[代码执行<br/>匹配报表/图表/日期/场景]\r\n    Code --> Cond{条件分支<br/>query_type}\r\n    Cond -->|data| HTTP[HTTP请求<br/>调数据平台API]\r\n    HTTP --> Agg[数据汇总]\r\n    Agg --> LLM3[LLM3 数据分析]\r\n    LLM3 --> Reply1[直接回复]\r\n    Cond -->|其他| KB1[知识检索1]\r\n    Cond -->|其他| KB2[知识检索2]\r\n    KB1 --> Merge[变量聚合器]\r\n    KB2 --> Merge\r\n    Merge --> LLMK[LLM 知识问答]\r\n    LLMK --> Reply2[直接回复]\r\n"
   },
   {
-    "file": "docs/part4/15-企业IM智能问答机器人.md",
+    "file": "docs/part4/16-企业IM智能问答机器人.md",
     "idx": 2,
     "code": "flowchart LR\r\n    S[\"开始<br/>game_name/period_type/module\"] --> P1[\"Python<br/>构造请求JSON\"]\r\n    P1 --> H[\"HTTP请求<br/>/api/report/weekly\"]\r\n    H --> P2[\"Python 2<br/>提取text\"]\r\n    P2 --> LLM[\"大模型问答<br/>生成周报分析\"]\r\n    LLM --> E[\"结束 result\"]\r\n"
   },
   {
-    "file": "docs/part4/15-企业IM智能问答机器人.md",
+    "file": "docs/part4/16-企业IM智能问答机器人.md",
     "idx": 3,
     "code": "flowchart TB\r\n    subgraph 调用方\r\n        CB[\"CodeBuddy / 企微Agent / Knot\"]\r\n        Other[\"curl / Dify / 前端页面 / 其他服务\"]\r\n    end\r\n    subgraph 接入层\r\n        MCP[\"MCP Server<br/>协议层\"]\r\n        REST[\"REST API<br/>HTTP层\"]\r\n    end\r\n    CB --> MCP\r\n    Other --> REST\r\n    MCP --> Core[\"核心业务逻辑<br/>共享层\"]\r\n    REST --> Core\r\n"
   },
   {
-    "file": "docs/part4/16-数据分析Agent架构演进.md",
+    "file": "docs/part4/17-数据分析Agent架构演进.md",
     "idx": 1,
     "code": "flowchart TD\r\n    V1[\"V1 全量拉取<br/>❌ 超上下文窗口 / Lost in the Middle\"] --> V2[\"V2 报表关键词匹配<br/>❌ 同义词覆盖不充分导致漏匹配\"]\r\n    V2 --> V3[\"V3 图表精确匹配<br/>choose_chart_col / only_charts / exclude_charts\"]\r\n    V3 --> V4[\"V4 智能时间解析<br/>当前日期写死传入，杜绝模型自猜\"]\r\n    V4 --> V5[\"V5 错误检测机制<br/>API异常 / 数据为空 / 全0数据三层检测\"]\r\n    V5 --> Result[\"✅ 查得准的数据分析Agent\"]\r\n    style Result fill:#5b6cf5,color:#fff\r\n"
   },
   {
-    "file": "docs/part4/17-独立开发者一周产品.md",
+    "file": "docs/part4/18-独立开发者一周产品.md",
     "idx": 1,
     "code": "flowchart LR\r\n    A[\"阶段一<br/>MVP核心逻辑<br/>1-2天\"] --> B[\"阶段二<br/>发现内网限制<br/>半天\"]\r\n    B --> C[\"阶段三<br/>公网方案选型<br/>1天\"]\r\n    C --> D[\"阶段四<br/>Serverless迁移<br/>1天\"]\r\n    D --> E[\"阶段五<br/>API Key配置<br/>半天\"]\r\n    E --> F[\"阶段六<br/>疑难Bug排查<br/>2-3天 ★最耗时\"]\r\n    style F fill:#a855f7,color:#fff\r\n"
   },
   {
-    "file": "docs/part5/18-毕业设计Pitch.md",
+    "file": "docs/part5/19-毕业设计Pitch.md",
     "idx": 1,
     "code": "graph TD\r\n    Q1[1.谁的什么问题] --> Q2[2.为什么现在<br/>是Agent能解决它的时间点]\r\n    Q2 --> Q3[3.成熟度定级<br/>L0~L3你要造到哪一级]\r\n    Q3 --> Q4[4.核心架构<br/>范式+工具+记忆+协议怎么组合]\r\n    Q4 --> Q5[5.怎么验证<br/>MVP和评估指标]\r\n    Q5 --> Q6[6.成本与风险<br/>幻觉/安全/依赖]\r\n    Q6 --> Q7[7.怎么演进<br/>从Demo到产品的路线图]\r\n"
   },
   {
-    "file": "docs/part5/18-毕业设计Pitch.md",
+    "file": "docs/part5/19-毕业设计Pitch.md",
     "idx": 2,
     "code": "sequenceDiagram\r\n    participant U as 用户提出研究主题\r\n    participant R as 调研员Agent\r\n    participant C as 审稿人Agent\r\n    participant Orch as 协调者Orchestrator\r\n    U->>Orch: 提交研究主题\r\n    Orch->>R: 委派任务:收集要点并生成初稿\r\n    R->>Orch: 返回初稿+使用的信息来源\r\n    Orch->>C: 委派任务:审查初稿的逻辑/事实/遗漏\r\n    C->>Orch: 返回审查意见(通过/需修正+具体问题)\r\n    alt 需修正\r\n        Orch->>R: 带着审查意见,要求修订\r\n        R->>Orch: 返回修订版\r\n        Orch->>C: 再次审查\r\n    end\r\n    Orch->>U: 输出最终简报\r\n"
   },
   {
-    "file": "docs/part5/19-转型面试题库.md",
+    "file": "docs/part5/20-转型面试题库.md",
     "idx": 1,
     "code": "flowchart LR\r\n    P1[\"Part1<br/>是什么\"] --> P2[\"Part2<br/>怎么做\"]\r\n    P2 --> P3[\"Part3<br/>怎么做得更好\"]\r\n    P3 --> P4[\"Part4<br/>真实世界怎么落地\"]\r\n    P4 --> P5[\"Part5<br/>怎么讲给别人听\"]\r\n    P5 --> Ready[\"🎯 面试 / 实战判断力\"]\r\n    style Ready fill:#5b6cf5,color:#fff\r\n"
+  },
+  {
+    "file": "docs/part6/21-多模态Agent专题.md",
+    "idx": 1,
+    "code": "flowchart LR\r\n    A[用户说话] --> B[ASR语音转文本]\r\n    B --> C[语义理解+决策<br/>LLM/Agent核心]\r\n    C --> D[TTS文本转语音]\r\n    D --> E[用户听到回复]\r\n    C -.打断信号.-> A\r\n    B -.识别置信度低.-> F[追问/澄清]\r\n"
+  },
+  {
+    "file": "docs/part6/21-多模态Agent专题.md",
+    "idx": 2,
+    "code": "flowchart TD\r\n    Img[用户上传图片] --> Fast[第一层:专用检测模型<br/>特定类别/特定属性的高频高置信度判断]\r\n    Fast -->|命中已知类别,直接给结果| Out1[快速返回]\r\n    Fast -->|未命中已知类别或置信度不足| Slow[第二层:通用多模态大模型<br/>做开放域理解+推理]\r\n    Slow --> Out2[综合判断]\r\n    Out1 -.持续积累标注数据.-> Fast\r\n"
+  },
+  {
+    "file": "docs/part6/21-多模态Agent专题.md",
+    "idx": 3,
+    "code": "flowchart TD\r\n    Start[用户需求涉及图片/语音输入] --> Q1{纯文本能否<br/>解决80%以上场景?}\r\n    Q1 --能--> Skip[优先做好文本Agent<br/>多模态作为后续加分项,不做首发必需项]\r\n    Q1 --不能--> Q2{该模态的感知错误<br/>代价是否很高?<br/>如金融/医疗/安全场景}\r\n    Q2 --是--> Layer[分层架构:专用模型+通用大模型兜底<br/>+ 低置信度必须有人工/追问兜底路径]\r\n    Q2 --否，容错度高，如闲聊/推荐场景--> Direct[可直接用通用多模态大模型<br/>接受一定的感知误差]\r\n"
+  },
+  {
+    "file": "docs/part6/22-Agent产品AB测试方法论.md",
+    "idx": 1,
+    "code": "flowchart TD\r\n    P1[问题一:非确定性<br/>同输入同版本,输出可能不同] --> S1[解决:提高单个case的重复采样次数<br/>看分布而不是单次结果]\r\n    P2[问题二:多步决策,单一指标不够用<br/>过程对了结果也可能错,反之也可能] --> S2[解决:任务成功率+过程合规率<br/>双轨指标体系]\r\n    P3[问题三:护栏指标缺失<br/>只看效果提升,不看风险有没有放大] --> S3[解决:效果指标和护栏指标<br/>必须同时达标才算通过]\r\n"
+  },
+  {
+    "file": "docs/part6/22-Agent产品AB测试方法论.md",
+    "idx": 2,
+    "code": "flowchart LR\r\n    A[传统AB测试<br/>单次请求级别分组] -.不适用于多轮任务.-> B\r\n    B[Agent AB测试<br/>Session级别分组] --> C[同一个用户的整个多轮任务<br/>全程走同一版本,不能中途切换]\r\n    C --> D[评估口径:整个任务是否达成<br/>而不是某一轮回复是否恰当]\r\n"
+  },
+  {
+    "file": "docs/part6/22-Agent产品AB测试方法论.md",
+    "idx": 3,
+    "code": "flowchart TD\r\n    Start[新版本/新策略准备验证] --> Q1{是否已经有<br/>稳定的离线评估基准集?}\r\n    Q1 --没有--> Off[先用历史case+人工标注<br/>搭建离线评估基准,不急着上线AB]\r\n    Q1 --有--> Q2{离线评估结果<br/>是否显著优于基线?}\r\n    Q2 --否或不确定--> Off2[继续离线迭代,不消耗真实流量做实验]\r\n    Q2 --是--> Q3{护栏指标在离线评估中<br/>是否同步达标?}\r\n    Q3 --否--> Fix[先修复护栏问题,<br/>不能拿线上AB去验证一个已知有风险的版本]\r\n    Q3 --是--> Online[小流量上线上AB测试<br/>Session级分组+效果护栏双轨监控]\r\n"
+  },
+  {
+    "file": "docs/part6/23-Agent产品商业化与定价模式.md",
+    "idx": 1,
+    "code": "flowchart TD\r\n    A[Agent产品定价模式] --> B[按座位/按订阅<br/>Seat-based]\r\n    A --> C[按用量/按Token<br/>Usage-based]\r\n    A --> D[按结果/按成功任务数<br/>Outcome-based]\r\n    A --> E[混合模式<br/>Hybrid]\r\n"
+  },
+  {
+    "file": "docs/part6/23-Agent产品商业化与定价模式.md",
+    "idx": 2,
+    "code": "flowchart TD\r\n    Start[评估你的Agent产品] --> Q1{不同用户之间<br/>单次任务的成本差异大不大?}\r\n    Q1 --差异小,相对稳定--> Seat[优先考虑按座位/订阅<br/>用户对固定费用有确定性预期]\r\n    Q1 --差异大,重度用户远超轻度用户--> Q2{任务边界是否<br/>清晰可定义成功?}\r\n    Q2 --清晰--> Outcome[可以尝试按结果收费<br/>或作为增值层叠加在基础订阅上]\r\n    Q2 --模糊--> Usage[按用量/Token计费更合理<br/>但要设计好用户侧的成本可预测性]\r\n"
+  },
+  {
+    "file": "docs/part6/24-团队协作与项目管理.md",
+    "idx": 1,
+    "code": "flowchart TD\r\n    PM[产品经理<br/>场景定义+验收标准+护栏边界] --> Eng[工程团队<br/>架构实现+集成+性能]\r\n    PM --> Algo[算法/Prompt工程<br/>效果调优+评估体系]\r\n    PM --> Biz[业务/运营方<br/>真实场景反馈+验收]\r\n    PM --> Sec[安全/合规<br/>风险评估+护栏审核]\r\n    Eng <-->|接口/性能预期对齐| Algo\r\n    Algo <-->|真实case反馈循环| Biz\r\n    Sec -.前置介入,不是事后补审.-> PM\r\n"
+  },
+  {
+    "file": "docs/part6/24-团队协作与项目管理.md",
+    "idx": 2,
+    "code": "flowchart TD\r\n    Conflict[团队对\"这个效果算不算达标\"产生分歧] --> Q1{分歧是关于场景理解<br/>还是关于护栏边界?}\r\n    Q1 --场景理解不一致--> S1[回到具体case样例逐条过<br/>不要在抽象描述层面争论]\r\n    Q1 --护栏边界不一致--> S2[拉安全/合规角色进来对齐<br/>护栏问题不该由产品/工程单方面决定]\r\n    S1 --> Q2{过完case后<br/>是否达成一致?}\r\n    Q2 --否--> S3[说明验收标准本身需要重新定义<br/>而不是继续在同一套标准下拉锯]\r\n"
   }
 ]

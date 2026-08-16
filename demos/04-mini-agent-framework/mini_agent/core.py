@@ -1,5 +1,5 @@
 """Harry 的 Agent 实战课 · Demo 04 —— 迷你 Agent 框架核心实现
-对应 docs/part2/08-从零写一个Agent框架.md
+对应 docs/part2/09-从零写一个Agent框架.md
 
 三个核心类：
 - Tool：封装一个可被模型调用的动作

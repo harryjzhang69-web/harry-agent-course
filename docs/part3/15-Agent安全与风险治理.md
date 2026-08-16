@@ -1,4 +1,4 @@
-# 14 Agent 安全与风险治理：Prompt Injection 防御与越权操作管控
+# 15 Agent 安全与风险治理：Prompt Injection 防御与越权操作管控
 
 ## 为什么这一章不是"锦上添花"，是迟早要补的课
 

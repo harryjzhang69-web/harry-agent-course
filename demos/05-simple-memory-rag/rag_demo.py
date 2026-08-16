@@ -1,6 +1,6 @@
 """
 Harry 的 Agent 实战课 · Demo 05 —— 最小可用的检索增强记忆（Simple RAG）
-对应 docs/part3/09-记忆与检索.md
+对应 docs/part3/10-记忆与检索.md
 
 核心流程：文本 -> Embedding -> 存入内存列表 -> 按余弦相似度检索Top-K -> 拼进Prompt生成回答。
 不依赖任何向量数据库，帮你看清楚 RAG 底层到底在做什么。

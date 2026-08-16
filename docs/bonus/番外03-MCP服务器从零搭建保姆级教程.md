@@ -1,14 +1,14 @@
 # 番外03：零基础保姆级——从零搭一个 MCP 服务器，并接入真实客户端
 
-> 本篇属于「番外篇」，不计入主线 6 个 Part / 23 章的编号体系。对应主线 [Part3 第11章《通信协议速查》](https://harryjzhang69-web.github.io/harry-agent-course/book.html#/docs/part3/11-通信协议速查)——11章解决的是"MCP/A2A/ANP 这几个协议分别是什么、什么时候该用"的**判断**，这一篇解决"具体怎么用手，把一个能力真的做成一个标准 MCP 服务器"的**操作**。配套可运行代码：[`demos/09-custom-mcp-server`](https://github.com/harryjzhang69-web/harry-agent-course/tree/main/demos/09-custom-mcp-server)。
+> 本篇属于「番外篇」，不计入主线 6 个 Part / 24 章的编号体系。对应主线 [Part3 第12章《通信协议速查》](https://harryjzhang69-web.github.io/harry-agent-course/book.html#/docs/part3/12-通信协议速查)——12章解决的是"MCP/A2A/ANP 这几个协议分别是什么、什么时候该用"的**判断**，这一篇解决"具体怎么用手，把一个能力真的做成一个标准 MCP 服务器"的**操作**。配套可运行代码：[`demos/09-custom-mcp-server`](https://github.com/harryjzhang69-web/harry-agent-course/tree/main/demos/09-custom-mcp-server)。
 
 ## 为什么要学这个：MCP 服务器不是"只有大厂才需要搭"的东西
 
-11章讲过 MCP 的核心价值类比"USB接口"——一次实现，多方复用。但很多人对"搭一个MCP服务器"这件事有个误解：以为这是给 Claude/OpenAI 这类平台方做的基础设施活，产品经理/个人开发者用不上。
+12章讲过 MCP 的核心价值类比"USB接口"——一次实现，多方复用。但很多人对"搭一个MCP服务器"这件事有个误解：以为这是给 Claude/OpenAI 这类平台方做的基础设施活，产品经理/个人开发者用不上。
 
 真实情况恰恰相反：**你自己团队内部的任何一个"经常被问、经常要查"的能力**（比如"查一下这个报表的最新数据""查一下这道面试题该怎么答""查一下这个客户的工单状态"），一旦发现有超过一个客户端/场景需要用它（比如你自己的Agent要用、同事的Cursor也想用、以后接入企业微信机器人也要用），就值得包一层MCP协议——这样只需要维护一份服务端逻辑，所有客户端都能直接"插上就用"。
 
-这一篇会带你把课程自己的 [Part5 第19章《转型面试题库》](https://harryjzhang69-web.github.io/harry-agent-course/book.html#/docs/part5/19-转型面试题库) 封装成一个真实的 MCP 服务器——选这个场景是有意为之：这样你能直接对比"同一份题库数据，番外01里包给 Coze 用的是知识库+RAG检索的方式，这一篇包给 MCP 客户端用的是结构化工具调用的方式"，两种技术路径的差异会更直观。
+这一篇会带你把课程自己的 [Part5 第20章《转型面试题库》](https://harryjzhang69-web.github.io/harry-agent-course/book.html#/docs/part5/20-转型面试题库) 封装成一个真实的 MCP 服务器——选这个场景是有意为之：这样你能直接对比"同一份题库数据，番外01里包给 Coze 用的是知识库+RAG检索的方式，这一篇包给 MCP 客户端用的是结构化工具调用的方式"，两种技术路径的差异会更直观。
 
 ```mermaid
 flowchart LR
@@ -113,7 +113,7 @@ async def main():
 [get_question_detail('b-q10')]
 【B-Q10】技术向问题
 题目：MCP协议解决了什么问题？跟直接写API对接工具有什么区别？
-对应课程章节：Part3 第11章
+对应课程章节：Part3 第12章
 参考思路：MCP的核心价值是标准化，'一次实现多处复用'...
 
 [get_question_detail('Z-Q99')（不存在）]

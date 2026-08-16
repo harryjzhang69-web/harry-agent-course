@@ -87,7 +87,7 @@ def build_cover(doc):
     page.draw_line((cx - 60, 470), (cx + 60, 470), color=(0.4, 0.45, 0.9), width=1.2)
     # 统计数字
     page.insert_textbox(fitz.Rect(40, 495, PAGE_W - 40, 525),
-                         '6 个 Part · 23 章正文 · 3 个真实项目复盘 · 6 个可运行 Demo',
+                         '6 个 Part · 24 章正文 · 3 个真实项目复盘 · 9 个可运行 Demo',
                          fontsize=12.5, fontname=FONT, color=(0.85, 0.87, 0.98), align=1)
     # 作者
     page.insert_textbox(fitz.Rect(40, 680, PAGE_W - 40, 710),
