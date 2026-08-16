@@ -38,6 +38,7 @@
 
 - **番外篇 · 手把手实战** 🆕
   - [番外01 Coze保姆级实战教程](docs/bonus/番外01-Coze保姆级实战教程.md)
+  - [番外02 个人品牌定位Agent全栈实战](docs/bonus/番外02-个人品牌定位Agent全栈实战.md)
 
 - [**可运行 Demo**](demos/README.md)
   - [01 最小ReAct Agent](demos/01-hello-react-agent/README.md)
@@ -46,6 +47,7 @@
   - [04 迷你Agent框架](demos/04-mini-agent-framework/README.md)
   - [05 最小可用RAG](demos/05-simple-memory-rag/README.md)
   - [06 多智能体协作](demos/06-multi-agent-collab/README.md)
+  - [07 个人品牌定位Agent(全栈)](demos/07-personal-brand-agent/README.md)
 
 - [🎮 交互式学习机（闯关学）](https://harryjzhang69-web.github.io/harry-agent-course/app/)
 - [📚 AI前沿论文日报](https://harryjzhang69-web.github.io/harry-agent-course/papers/index.html)

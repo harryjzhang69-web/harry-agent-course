@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>个人品牌定位 Agent · Harry 的 Agent 实战课</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="brand">🧭 个人品牌定位 Agent</div>
+      <div class="sub">demos/07 · 4个专门Agent串行协作，输入基本信息，产出一份可直接用的定位报告</div>
+    </header>
+
+    <main class="layout">
+      <!-- 左侧：输入表单 -->
+      <section class="panel form-panel">
+        <h2>Step 1 · 填写你的基本信息</h2>
+        <form id="profileForm">
+          <label>姓名/昵称
+            <input type="text" name="name" placeholder="例如：Harry" required />
+          </label>
+          <label>背景经历
+            <textarea name="background" rows="3" placeholder="例如：清华硕士，前腾讯游戏产品经理，做过PUBGM安全运营方向" required></textarea>
+          </label>
+          <label>技能标签（用逗号分隔）
+            <input type="text" name="skills" placeholder="例如：产品设计, Agent开发, 数据分析" />
+          </label>
+          <label>目标受众
+            <input type="text" name="target_audience" placeholder="例如：想转型AI产品经理的人" required />
+          </label>
+          <label>期望方向（可选）
+            <input type="text" name="direction" placeholder="例如：AI产品手艺人 / 独立开发者" />
+          </label>
+          <label>已有内容平台链接（可选）
+            <input type="text" name="existing_content" placeholder="例如：小红书@xxx / 公众号xxx" />
+          </label>
+          <button type="submit" id="submitBtn">开始生成定位报告 →</button>
+        </form>
+
+        <div class="progress-box" id="progressBox" hidden>
+          <h3>Agent 执行进度</h3>
+          <ul class="progress-list" id="progressList"></ul>
+        </div>
+      </section>
+
+      <!-- 右侧：结果展示 -->
+      <section class="panel result-panel">
+        <div class="empty-state" id="emptyState">
+          <p>👈 填好左侧表单，四个专门 Agent 会依次接力：</p>
+          <ol>
+            <li>定位分析师 —— 找差异化角度</li>
+            <li>内容策略师 —— 排内容支柱+首月日历</li>
+            <li>文案专家 —— 生成简介/首发文案</li>
+            <li>整合编辑 —— 汇总成完整报告</li>
+          </ol>
+        </div>
+
+        <div class="report" id="reportBox" hidden>
+          <div class="report-header">
+            <h2 id="reportTitle"></h2>
+            <button id="downloadBtn" class="ghost-btn">⬇ 导出 Markdown</button>
+          </div>
+          <blockquote id="editorSummary" class="editor-summary"></blockquote>
+
+          <div class="card">
+            <h3>一、定位</h3>
+            <p class="one-liner" id="oneLiner"></p>
+            <div class="tag-block">
+              <strong>差异化角度</strong>
+              <ul id="differentiators"></ul>
+            </div>
+            <div class="tag-block">
+              <strong>目标受众钩子</strong>
+              <ul id="personaHooks"></ul>
+            </div>
+            <p class="risk-warning" id="riskWarning" hidden></p>
+          </div>
+
+          <div class="card">
+            <h3>二、内容策略</h3>
+            <div id="pillars"></div>
+            <h4>首月内容日历</h4>
+            <table id="calendarTable">
+              <thead><tr><th>周次</th><th>选题</th><th>渠道</th></tr></thead>
+              <tbody></tbody>
+            </table>
+            <h4>渠道打法</h4>
+            <ul id="channelTactics"></ul>
+          </div>
+
+          <div class="card">
+            <h3>三、可直接使用的文案</h3>
+            <div class="copy-item">
+              <strong>一句话简介</strong>
+              <p id="bioShort"></p>
+            </div>
+            <div class="copy-item">
+              <strong>长简介</strong>
+              <p id="bioLong"></p>
+            </div>
+            <div class="copy-item">
+              <strong>首发种草文案草稿</strong>
+              <p id="socialPost"></p>
+            </div>
+            <div class="copy-item">
+              <strong>个人网站 Hero 文案</strong>
+              <p id="websiteHero"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="error-box" id="errorBox" hidden></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      对应课程 <a href="https://harryjzhang69-web.github.io/harry-agent-course/book.html#/docs/bonus/番外02-个人品牌定位Agent全栈实战">番外02 全栈实战文档</a> ·
+      <a href="https://harryjzhang69-web.github.io/harry-agent-course/">返回课程首页</a>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
