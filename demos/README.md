@@ -12,5 +12,6 @@
 | [06-multi-agent-collab](./06-multi-agent-collab) | Part 5 第18章（毕业设计capstone） | 调研员+审稿人+协调者三角色协作，含轮数上限/审计日志等安全护栏 |
 | [07-personal-brand-agent](./07-personal-brand-agent) | 番外02 全栈实战文档 | 🆕 第一个可 clone 直接跑起来的完整全栈应用（前端+FastAPI后端+4个Agent协作），输入背景信息产出个人品牌定位报告 |
 | [08-langgraph-prd-review](./08-langgraph-prd-review) | Part 2 第07章 主流框架产品化评测 | 🆕 唯一真实调用框架SDK（`langgraph`）的demo：三分支判决的PRD评审流水线，用上状态图/条件边/状态持久化/自动生成流程图 |
+| [09-custom-mcp-server](./09-custom-mcp-server) | Part 3 第11章 通信协议速查 / 番外03 | 🆕 用官方`mcp` SDK从零搭建的真实MCP服务器（面试题库3个工具），配真实端到端协议测试（已实测5项断言全部通过） |
 
 更多 demo 会持续加入，进度见 [ROADMAP.md](../ROADMAP.md)。

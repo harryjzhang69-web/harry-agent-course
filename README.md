@@ -91,6 +91,8 @@
 ### 番外篇 · 手把手实战教程 🆕（持续更新，不计入主线23章）
 - [番外01 零代码实战：用 Coze 从0到1搭一个「AI产品经理面试陪练」Bot（保姆级教程，配截图占位）](./docs/bonus/番外01-Coze保姆级实战教程.md)
 - [番外02 全栈实战：从0搭一个「个人品牌定位 Agent」（前端+后端+多智能体协作）](./docs/bonus/番外02-个人品牌定位Agent全栈实战.md)
+- [番外03 零基础保姆级：从0搭一个MCP服务器，并接入真实客户端](./docs/bonus/番外03-MCP服务器从零搭建保姆级教程.md)
+- [番外04 四个你该知道的前沿趋势：Agent Skills与MCP / GUI Agent / Web Agent / Agent自进化](./docs/bonus/番外04-四个前沿科普.md)
 
 ### 可运行 Demo（免费）
 - [demos/01-hello-react-agent](./demos/01-hello-react-agent)：5分钟跑起来的最小 ReAct Agent
@@ -101,6 +103,7 @@
 - [demos/06-multi-agent-collab](./demos/06-multi-agent-collab)：多智能体协作（毕业设计Capstone）
 - [demos/07-personal-brand-agent](./demos/07-personal-brand-agent)：🆕 完整全栈应用——个人品牌定位 Agent（前端+FastAPI+4个Agent协作）
 - [demos/08-langgraph-prd-review](./demos/08-langgraph-prd-review)：🆕 唯一真实调用框架SDK的demo——用LangGraph实现三分支判决的PRD评审流水线
+- [demos/09-custom-mcp-server](./demos/09-custom-mcp-server)：🆕 从零搭建的真实MCP服务器，配官方SDK真实实测通过的协议层测试
 
 ## 怎么读
 

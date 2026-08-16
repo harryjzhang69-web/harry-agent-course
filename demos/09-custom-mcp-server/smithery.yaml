@@ -1,0 +1,35 @@
+# Smithery 平台配置文件（发布准备用，不是运行本地demo必需）
+# 详细说明见 README.md「发布准备清单」一节
+
+name: interview-question-bank
+displayName: AI产品经理/Agent工程师转型面试题库
+description: 15道AI产品经理/Agent工程师转型面试题，覆盖产品向/技术向/综合场景三大类，附参考思路与对应课程章节
+version: 1.0.0
+author: Harry
+homepage: https://github.com/harryjzhang69-web/harry-agent-course
+license: MIT
+
+categories:
+  - education
+  - career
+
+tags:
+  - interview
+  - ai-product-manager
+  - agent
+
+runtime: container
+build:
+  dockerfile: Dockerfile
+  dockerBuildPath: .
+
+startCommand:
+  type: stdio
+
+tools:
+  - name: list_questions
+    description: 按分类列出面试题目标题
+  - name: get_question_detail
+    description: 查询某道题的完整信息（题目+参考思路+对应课程章节）
+  - name: get_random_question
+    description: 随机抽一道题用于自测
