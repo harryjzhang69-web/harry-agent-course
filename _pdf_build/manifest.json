@@ -1,0 +1,272 @@
+[
+  {
+    "seq": 1,
+    "kind": "preface",
+    "partId": null,
+    "title": "00 前言：我为什么要写这套东西",
+    "route": "docs/00-前言",
+    "file": "docs/00-前言.md",
+    "pdfName": "01.pdf"
+  },
+  {
+    "seq": 2,
+    "kind": "part-readme",
+    "partId": "part1",
+    "title": "Part 1 · 认知重建",
+    "route": "docs/part1/README",
+    "file": "docs/part1/README.md",
+    "pdfName": "02.pdf"
+  },
+  {
+    "seq": 3,
+    "kind": "chapter",
+    "partId": "part1",
+    "title": "01 Agent 不是新物种：从自动化脚本到自主智能体的连续谱",
+    "route": "docs/part1/01-Agent不是新物种",
+    "file": "docs/part1/01-Agent不是新物种.md",
+    "pdfName": "03.pdf"
+  },
+  {
+    "seq": 4,
+    "kind": "chapter",
+    "partId": "part1",
+    "title": "02 一张图看懂 Agent 进化史",
+    "route": "docs/part1/02-一张图看懂Agent进化史",
+    "file": "docs/part1/02-一张图看懂Agent进化史.md",
+    "pdfName": "04.pdf"
+  },
+  {
+    "seq": 5,
+    "kind": "chapter",
+    "partId": "part1",
+    "title": "03 大模型是发动机，不是车",
+    "route": "docs/part1/03-大模型是发动机不是车",
+    "file": "docs/part1/03-大模型是发动机不是车.md",
+    "pdfName": "05.pdf"
+  },
+  {
+    "seq": 6,
+    "kind": "chapter",
+    "partId": "part1",
+    "title": "04 Agent 产品成熟度分级：L0~L3",
+    "route": "docs/part1/04-Agent产品成熟度分级",
+    "file": "docs/part1/04-Agent产品成熟度分级.md",
+    "pdfName": "06.pdf"
+  },
+  {
+    "seq": 7,
+    "kind": "part-readme",
+    "partId": "part2",
+    "title": "Part 2 · 亲手造轮子——从 Prompt 到框架 ✅",
+    "route": "docs/part2/README",
+    "file": "docs/part2/README.md",
+    "pdfName": "07.pdf"
+  },
+  {
+    "seq": 8,
+    "kind": "chapter",
+    "partId": "part2",
+    "title": "05 三大经典范式手把手实现：ReAct / Plan-and-Solve / Reflection",
+    "route": "docs/part2/05-三大经典范式手把手实现",
+    "file": "docs/part2/05-三大经典范式手把手实现.md",
+    "pdfName": "08.pdf"
+  },
+  {
+    "seq": 9,
+    "kind": "chapter",
+    "partId": "part2",
+    "title": "06 低代码平台怎么选：Dify / Coze / n8n",
+    "route": "docs/part2/06-低代码平台怎么选",
+    "file": "docs/part2/06-低代码平台怎么选.md",
+    "pdfName": "09.pdf"
+  },
+  {
+    "seq": 10,
+    "kind": "chapter",
+    "partId": "part2",
+    "title": "07 主流框架产品化评测：LangGraph / AutoGen / AgentScope",
+    "route": "docs/part2/07-主流框架产品化评测",
+    "file": "docs/part2/07-主流框架产品化评测.md",
+    "pdfName": "10.pdf"
+  },
+  {
+    "seq": 11,
+    "kind": "chapter",
+    "partId": "part2",
+    "title": "08 从零写一个 <300 行的 Agent 框架",
+    "route": "docs/part2/08-从零写一个Agent框架",
+    "file": "docs/part2/08-从零写一个Agent框架.md",
+    "pdfName": "11.pdf"
+  },
+  {
+    "seq": 12,
+    "kind": "part-readme",
+    "partId": "part3",
+    "title": "Part 3 · 让Agent 活起来——高级能力 ✅",
+    "route": "docs/part3/README",
+    "file": "docs/part3/README.md",
+    "pdfName": "12.pdf"
+  },
+  {
+    "seq": 13,
+    "kind": "chapter",
+    "partId": "part3",
+    "title": "09 记忆与检索：Agent 怎么\"记住\"重要的事",
+    "route": "docs/part3/09-记忆与检索",
+    "file": "docs/part3/09-记忆与检索.md",
+    "pdfName": "13.pdf"
+  },
+  {
+    "seq": 14,
+    "kind": "chapter",
+    "partId": "part3",
+    "title": "10 上下文工程：不止是 Prompt Engineering",
+    "route": "docs/part3/10-上下文工程",
+    "file": "docs/part3/10-上下文工程.md",
+    "pdfName": "14.pdf"
+  },
+  {
+    "seq": 15,
+    "kind": "chapter",
+    "partId": "part3",
+    "title": "11 智能体通信协议速查：MCP / A2A / ANP",
+    "route": "docs/part3/11-通信协议速查",
+    "file": "docs/part3/11-通信协议速查.md",
+    "pdfName": "15.pdf"
+  },
+  {
+    "seq": 16,
+    "kind": "chapter",
+    "partId": "part3",
+    "title": "12 Agentic RL 产品经理版：SFT → GRPO，什么时候真的需要训练",
+    "route": "docs/part3/12-Agentic-RL产品经理版",
+    "file": "docs/part3/12-Agentic-RL产品经理版.md",
+    "pdfName": "16.pdf"
+  },
+  {
+    "seq": 17,
+    "kind": "chapter",
+    "partId": "part3",
+    "title": "13 Agent 评估体系与常见陷阱",
+    "route": "docs/part3/13-Agent评估体系与常见陷阱",
+    "file": "docs/part3/13-Agent评估体系与常见陷阱.md",
+    "pdfName": "17.pdf"
+  },
+  {
+    "seq": 18,
+    "kind": "chapter",
+    "partId": "part3",
+    "title": "14 Agent 安全与风险治理：Prompt Injection 防御与越权操作管控",
+    "route": "docs/part3/14-Agent安全与风险治理",
+    "file": "docs/part3/14-Agent安全与风险治理.md",
+    "pdfName": "18.pdf"
+  },
+  {
+    "seq": 19,
+    "kind": "part-readme",
+    "partId": "part4",
+    "title": "Part 4 · 从 Demo 到产品——真实项目复盘 ✅ 全部免费",
+    "route": "docs/part4/README",
+    "file": "docs/part4/README.md",
+    "pdfName": "19.pdf"
+  },
+  {
+    "seq": 20,
+    "kind": "chapter",
+    "partId": "part4",
+    "title": "15 案例一：企业 IM 智能问答机器人——从 Dify 工作流到自建 MCP Server 架构",
+    "route": "docs/part4/15-企业IM智能问答机器人",
+    "file": "docs/part4/15-企业IM智能问答机器人.md",
+    "pdfName": "20.pdf"
+  },
+  {
+    "seq": 21,
+    "kind": "chapter",
+    "partId": "part4",
+    "title": "16 案例二：数据分析 Agent 架构演进——从\"能查\"到\"查得准\"的层层加固",
+    "route": "docs/part4/16-数据分析Agent架构演进",
+    "file": "docs/part4/16-数据分析Agent架构演进.md",
+    "pdfName": "21.pdf"
+  },
+  {
+    "seq": 22,
+    "kind": "chapter",
+    "partId": "part4",
+    "title": "17 案例三：独立开发者一周做出AI 小产品——从 MVP 到能用的完整过程",
+    "route": "docs/part4/17-独立开发者一周产品",
+    "file": "docs/part4/17-独立开发者一周产品.md",
+    "pdfName": "22.pdf"
+  },
+  {
+    "seq": 23,
+    "kind": "part-readme",
+    "partId": "part5",
+    "title": "Part 5 · 毕业设计与展望 ✅",
+    "route": "docs/part5/README",
+    "file": "docs/part5/README.md",
+    "pdfName": "23.pdf"
+  },
+  {
+    "seq": 24,
+    "kind": "chapter",
+    "partId": "part5",
+    "title": "18 毕业设计：设计你自己的 Agent 产品 Pitch",
+    "route": "docs/part5/18-毕业设计Pitch",
+    "file": "docs/part5/18-毕业设计Pitch.md",
+    "pdfName": "24.pdf"
+  },
+  {
+    "seq": 25,
+    "kind": "chapter",
+    "partId": "part5",
+    "title": "19 转型面试题库：AI 产品经理 / Agent 工程师",
+    "route": "docs/part5/19-转型面试题库",
+    "file": "docs/part5/19-转型面试题库.md",
+    "pdfName": "25.pdf"
+  },
+  {
+    "seq": 26,
+    "kind": "part-readme",
+    "partId": "part6",
+    "title": "Part 6 · 产品化跃升——从能跑到能规模化",
+    "route": "docs/part6/README",
+    "file": "docs/part6/README.md",
+    "pdfName": "26.pdf"
+  },
+  {
+    "seq": 27,
+    "kind": "chapter",
+    "partId": "part6",
+    "title": "20 多模态 Agent 专题：语音 / 图片 / 视觉场景的产品设计",
+    "route": "docs/part6/20-多模态Agent专题",
+    "file": "docs/part6/20-多模态Agent专题.md",
+    "pdfName": "27.pdf"
+  },
+  {
+    "seq": 28,
+    "kind": "chapter",
+    "partId": "part6",
+    "title": "21 Agent 产品的 AB 测试方法论：给\"会自主决策\"的产品做实验",
+    "route": "docs/part6/21-Agent产品AB测试方法论",
+    "file": "docs/part6/21-Agent产品AB测试方法论.md",
+    "pdfName": "28.pdf"
+  },
+  {
+    "seq": 29,
+    "kind": "chapter",
+    "partId": "part6",
+    "title": "22 Agent 产品商业化与定价模式：怎么让 Agent 产品挣钱",
+    "route": "docs/part6/22-Agent产品商业化与定价模式",
+    "file": "docs/part6/22-Agent产品商业化与定价模式.md",
+    "pdfName": "29.pdf"
+  },
+  {
+    "seq": 30,
+    "kind": "chapter",
+    "partId": "part6",
+    "title": "23 团队协作与项目管理：怎么带团队把 Agent 项目做成",
+    "route": "docs/part6/23-团队协作与项目管理",
+    "file": "docs/part6/23-团队协作与项目管理.md",
+    "pdfName": "30.pdf"
+  }
+]
