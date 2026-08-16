@@ -11,5 +11,6 @@
 | [05-simple-memory-rag](./05-simple-memory-rag) | Part 3 第09章 | 不到100行的最小可用RAG：Embedding+相似度检索+拼Prompt生成 |
 | [06-multi-agent-collab](./06-multi-agent-collab) | Part 5 第18章（毕业设计capstone） | 调研员+审稿人+协调者三角色协作，含轮数上限/审计日志等安全护栏 |
 | [07-personal-brand-agent](./07-personal-brand-agent) | 番外02 全栈实战文档 | 🆕 第一个可 clone 直接跑起来的完整全栈应用（前端+FastAPI后端+4个Agent协作），输入背景信息产出个人品牌定位报告 |
+| [08-langgraph-prd-review](./08-langgraph-prd-review) | Part 2 第07章 主流框架产品化评测 | 🆕 唯一真实调用框架SDK（`langgraph`）的demo：三分支判决的PRD评审流水线，用上状态图/条件边/状态持久化/自动生成流程图 |
 
 更多 demo 会持续加入，进度见 [ROADMAP.md](../ROADMAP.md)。

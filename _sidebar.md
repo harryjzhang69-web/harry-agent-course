@@ -48,6 +48,7 @@
   - [05 最小可用RAG](demos/05-simple-memory-rag/README.md)
   - [06 多智能体协作](demos/06-multi-agent-collab/README.md)
   - [07 个人品牌定位Agent(全栈)](demos/07-personal-brand-agent/README.md)
+  - [08 LangGraph真实框架实战](demos/08-langgraph-prd-review/README.md)
 
 - [🎮 交互式学习机（闯关学）](https://harryjzhang69-web.github.io/harry-agent-course/app/)
 - [📚 AI前沿论文日报](https://harryjzhang69-web.github.io/harry-agent-course/papers/index.html)

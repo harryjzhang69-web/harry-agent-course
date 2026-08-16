@@ -100,6 +100,7 @@
 - [demos/05-simple-memory-rag](./demos/05-simple-memory-rag)：最小可用的检索增强记忆（RAG）
 - [demos/06-multi-agent-collab](./demos/06-multi-agent-collab)：多智能体协作（毕业设计Capstone）
 - [demos/07-personal-brand-agent](./demos/07-personal-brand-agent)：🆕 完整全栈应用——个人品牌定位 Agent（前端+FastAPI+4个Agent协作）
+- [demos/08-langgraph-prd-review](./demos/08-langgraph-prd-review)：🆕 唯一真实调用框架SDK的demo——用LangGraph实现三分支判决的PRD评审流水线
 
 ## 怎么读
 
