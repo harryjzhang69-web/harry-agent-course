@@ -73,7 +73,7 @@ def build_cover(doc):
     cx = PAGE_W / 2
     # 顶部小标签
     page.insert_textbox(fitz.Rect(0, 90, PAGE_W, 115),
-                         'FREE & OPEN SOURCE · 6 PART · 23 CHAPTERS',
+                         'FREE & OPEN SOURCE · 6 PART · 24 CHAPTERS',
                          fontsize=11, fontname='helv', color=(0.6, 0.66, 0.98), align=1)
     # 主标题
     page.insert_textbox(fitz.Rect(40, 300, PAGE_W - 40, 400),

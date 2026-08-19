@@ -10,11 +10,11 @@ const DOCS = path.join(ROOT, 'docs');
 
 const PARTS = [
   { id: 'part1', chapters: ['01-Agent不是新物种', '02-一张图看懂Agent进化史', '03-大模型是发动机不是车', '04-Agent产品成熟度分级'] },
-  { id: 'part2', chapters: ['05-三大经典范式手把手实现', '06-低代码平台怎么选', '07-主流框架产品化评测', '08-从零写一个Agent框架'] },
-  { id: 'part3', chapters: ['09-记忆与检索', '10-上下文工程', '11-通信协议速查', '12-Agentic-RL产品经理版', '13-Agent评估体系与常见陷阱', '14-Agent安全与风险治理'] },
-  { id: 'part4', chapters: ['15-企业IM智能问答机器人', '16-数据分析Agent架构演进', '17-独立开发者一周产品'] },
-  { id: 'part5', chapters: ['18-毕业设计Pitch', '19-转型面试题库'] },
-  { id: 'part6', chapters: ['20-多模态Agent专题', '21-Agent产品AB测试方法论', '22-Agent产品商业化与定价模式', '23-团队协作与项目管理'] },
+  { id: 'part2', chapters: ['05-三大经典范式手把手实现', '06-Vibecoding方法论', '07-低代码平台怎么选', '08-主流框架产品化评测', '09-从零写一个Agent框架'] },
+  { id: 'part3', chapters: ['10-记忆与检索', '11-上下文工程', '12-通信协议速查', '13-Agentic-RL产品经理版', '14-Agent评估体系与常见陷阱', '15-Agent安全与风险治理'] },
+  { id: 'part4', chapters: ['16-企业IM智能问答机器人', '17-数据分析Agent架构演进', '18-独立开发者一周产品'] },
+  { id: 'part5', chapters: ['19-毕业设计Pitch', '20-转型面试题库'] },
+  { id: 'part6', chapters: ['21-多模态Agent专题', '22-Agent产品AB测试方法论', '23-Agent产品商业化与定价模式', '24-团队协作与项目管理'] },
 ];
 
 function getH1(filePath) {
